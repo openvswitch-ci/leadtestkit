@@ -34,7 +34,7 @@
             "name": "Eli Britstein",
             "email": "elibr@nvidia.com"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "45eb136ec75c727a7eab5a79267782c7f05a8755",
           "pushed": "2026-11-16T07:42:11Z",
           "runs": [
@@ -266,6 +266,12 @@
               "detail": "Sent final email for github-robot: Build and Test (success). Message-ID: <leadtest.533982.2345792.github-robot-build-and-test.final.1794814893.1@ovn.org>.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/43828733876/attempts/1",
               "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/43825662916/attempts/1"
+            },
+            {
+              "time": "2026-11-16T08:11:46Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/43828733876/attempts/1"
             }
           ]
         },
