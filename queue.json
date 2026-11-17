@@ -3,21 +3,45 @@
   "series": [
     {
       "id": 534343,
-      "name": "",
-      "date": "",
+      "name": "[ovs-dev,v0] ofproto-dpif-xlate: Fix overly broad flows on invalid Geneve metadata.",
+      "date": "2026-11-17T14:37:10+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/openvswitch/list/?series=534343",
       "submitter": {
-        "email": ""
+        "name": "Lucas Vargas Dias",
+        "email": "lucas.vdias@magalu.cloud"
       },
-      "total": 0,
-      "status": "new",
+      "total": 1,
+      "status": "queued",
       "discovered": "2026-11-17T14:44:57Z",
-      "patches": [],
+      "patches": [
+        {
+          "id": 2347010,
+          "number": 1,
+          "name": "[ovs-dev,v0] ofproto-dpif-xlate: Fix overly broad flows on invalid Geneve metadata.",
+          "msgid": "<20261117143710.166575-1-lucas.vdias@magalu.cloud>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-17T15:08:02Z",
+              "action": "discovered",
+              "detail": "Found in series 534343.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44107882796/attempts/1"
+            }
+          ]
+        }
+      ],
       "decisions": [
         {
           "time": "2026-11-17T14:44:57Z",
           "action": "discovered",
           "detail": "Found in Patchwork.",
           "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44105137047/attempts/1"
+        },
+        {
+          "time": "2026-11-17T15:08:02Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 1 patches.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44107882796/attempts/1"
         }
       ]
     }
