@@ -4,7 +4,7 @@
   "failing": {
     "patchwork": {
       "service": "patchwork",
-      "since": "2026-11-17T18:03:00Z",
+      "since": "2026-11-17T18:28:51Z",
       "reason": "HTTP 502 from https://patchwork.ozlabs.org/api/1.2/series/?order=-id&per_page=50&project=openvswitch with response \"(html page)\""
     }
   },
@@ -1166,6 +1166,12 @@
       "since": "2026-11-17T16:17:42Z",
       "until": "2026-11-17T17:19:44Z",
       "reason": "events series-completed page 1: HTTP 502 from https://patchwork.ozlabs.org/api/1.2/events/?category=series-completed&order=-id&per_page=1024&project=openvswitch&page=1 with response \"(html page)\""
+    },
+    {
+      "service": "patchwork",
+      "since": "2026-11-17T18:03:00Z",
+      "until": "2026-11-17T18:26:40Z",
+      "reason": "HTTP 502 from https://patchwork.ozlabs.org/api/1.2/series/?order=-id&per_page=50&project=openvswitch with response \"(html page)\""
     }
   ]
 }
