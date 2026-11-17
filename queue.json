@@ -1,4 +1,174 @@
 {
   "schema": 13,
-  "series": []
+  "series": [
+    {
+      "id": 534314,
+      "name": "netfilter: nf_conncount: reduce list_lock contention at the limit",
+      "version": 1,
+      "date": "2026-11-17T11:53:05+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/openvswitch/list/?series=534314",
+      "submitter": {
+        "name": "Vladimir Vdovin",
+        "email": "deliran@verdict.gg"
+      },
+      "total": 5,
+      "cover_id": 2346923,
+      "status": "skipped",
+      "reason": "kernel patch",
+      "discovered": "2026-11-17T12:54:39Z",
+      "finished": "2026-11-17T12:55:33Z",
+      "patches": [
+        {
+          "id": 2346922,
+          "number": 1,
+          "name": "[ovs-dev,nf-next,v1,1/5] netfilter: nf_conncount: bound the gc walk by examined entries",
+          "msgid": "<20261117115308.95134-2-deliran@verdict.gg>",
+          "subject": "[ovs-dev] [PATCH nf-next v1 1/5] netfilter: nf_conncount: bound the gc walk by examined entries",
+          "sender": {
+            "name": "Vladimir Vdovin",
+            "email": "deliran@verdict.gg"
+          },
+          "status": "skipped",
+          "decisions": [
+            {
+              "time": "2026-11-17T12:55:30Z",
+              "action": "discovered",
+              "detail": "Found in series 534314.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44087216790/attempts/1"
+            },
+            {
+              "time": "2026-11-17T12:56:40Z",
+              "action": "skipped",
+              "detail": "Series skipped: kernel patch",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44087216790/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2346919,
+          "number": 2,
+          "name": "[ovs-dev,nf-next,v1,2/5] netfilter: nf_conncount: check last_gc before taking list_lock in gc_list",
+          "msgid": "<20261117115308.95134-3-deliran@verdict.gg>",
+          "subject": "[ovs-dev] [PATCH nf-next v1 2/5] netfilter: nf_conncount: check last_gc before taking list_lock in gc_list",
+          "sender": {
+            "name": "Vladimir Vdovin",
+            "email": "deliran@verdict.gg"
+          },
+          "status": "skipped",
+          "decisions": [
+            {
+              "time": "2026-11-17T12:55:30Z",
+              "action": "discovered",
+              "detail": "Found in series 534314.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44087216790/attempts/1"
+            },
+            {
+              "time": "2026-11-17T12:56:40Z",
+              "action": "skipped",
+              "detail": "Series skipped: kernel patch",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44087216790/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2346921,
+          "number": 3,
+          "name": "[ovs-dev,nf-next,v1,3/5] netfilter: nf_conncount: size the number of slots from the cpu count",
+          "msgid": "<20261117115308.95134-4-deliran@verdict.gg>",
+          "subject": "[ovs-dev] [PATCH nf-next v1 3/5] netfilter: nf_conncount: size the number of slots from the cpu count",
+          "sender": {
+            "name": "Vladimir Vdovin",
+            "email": "deliran@verdict.gg"
+          },
+          "status": "skipped",
+          "decisions": [
+            {
+              "time": "2026-11-17T12:55:30Z",
+              "action": "discovered",
+              "detail": "Found in series 534314.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44087216790/attempts/1"
+            },
+            {
+              "time": "2026-11-17T12:56:40Z",
+              "action": "skipped",
+              "detail": "Series skipped: kernel patch",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44087216790/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2346924,
+          "number": 4,
+          "name": "[ovs-dev,nf-next,v1,4/5] openvswitch: conntrack: do not record connections above the zone limit",
+          "msgid": "<20261117115308.95134-5-deliran@verdict.gg>",
+          "subject": "[ovs-dev] [PATCH nf-next v1 4/5] openvswitch: conntrack: do not record connections above the zone limit",
+          "sender": {
+            "name": "Vladimir Vdovin",
+            "email": "deliran@verdict.gg"
+          },
+          "status": "skipped",
+          "decisions": [
+            {
+              "time": "2026-11-17T12:55:30Z",
+              "action": "discovered",
+              "detail": "Found in series 534314.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44087216790/attempts/1"
+            },
+            {
+              "time": "2026-11-17T12:56:40Z",
+              "action": "skipped",
+              "detail": "Series skipped: kernel patch",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44087216790/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2346920,
+          "number": 5,
+          "name": "[ovs-dev,nf-next,v1,5/5] openvswitch: conntrack: warn about a zone above its limit without a lock",
+          "msgid": "<20261117115308.95134-6-deliran@verdict.gg>",
+          "subject": "[ovs-dev] [PATCH nf-next v1 5/5] openvswitch: conntrack: warn about a zone above its limit without a lock",
+          "sender": {
+            "name": "Vladimir Vdovin",
+            "email": "deliran@verdict.gg"
+          },
+          "status": "skipped",
+          "decisions": [
+            {
+              "time": "2026-11-17T12:55:30Z",
+              "action": "discovered",
+              "detail": "Found in series 534314.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44087216790/attempts/1"
+            },
+            {
+              "time": "2026-11-17T12:56:40Z",
+              "action": "skipped",
+              "detail": "Series skipped: kernel patch",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44087216790/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-17T12:54:39Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44087216790/attempts/1"
+        },
+        {
+          "time": "2026-11-17T12:55:30Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 5 patches.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44087216790/attempts/1"
+        },
+        {
+          "time": "2026-11-17T12:56:40Z",
+          "action": "skipped",
+          "detail": "kernel patch",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44087216790/attempts/1"
+        }
+      ]
+    }
+  ]
 }
