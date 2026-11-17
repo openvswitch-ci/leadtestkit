@@ -11,21 +11,90 @@
         "email": "lucas.vdias@magalu.cloud"
       },
       "total": 1,
-      "status": "queued",
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/openvswitch/ovs.git",
+        "branch": "main",
+        "sha": "e77c3bac93f5f62234e5e586b6b02488a43e4557",
+        "why": "default"
+      },
+      "branch": "series_534343",
       "discovered": "2026-11-17T14:44:57Z",
+      "started": "2026-11-17T15:47:03Z",
       "patches": [
         {
           "id": 2347010,
           "number": 1,
           "name": "[ovs-dev,v0] ofproto-dpif-xlate: Fix overly broad flows on invalid Geneve metadata.",
           "msgid": "<20261117143710.166575-1-lucas.vdias@magalu.cloud>",
-          "status": "pending",
+          "subject": "[ovs-dev] [PATCH v0] ofproto-dpif-xlate: Fix overly broad flows on invalid Geneve metadata.",
+          "sender": {
+            "name": "Lucas Vargas Dias",
+            "email": "lucas.vdias@magalu.cloud"
+          },
+          "status": "pushed",
+          "sha": "9b04ff75e4baf0ebdcf9b5df1035ea0ce3fef428",
+          "pushed": "2026-11-17T15:47:11Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-17T15:47:11Z",
+              "completed": "2026-11-17T15:47:11Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534343.2347010.apply-robot.final.1794930423.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "534343-2347010-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-17T15:47:14Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
           "decisions": [
             {
               "time": "2026-11-17T15:08:02Z",
               "action": "discovered",
               "detail": "Found in series 534343.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44107882796/attempts/1"
+            },
+            {
+              "time": "2026-11-17T15:47:11Z",
+              "action": "applied",
+              "detail": "Commit 9b04ff75e4baf0ebdcf9b5df1035ea0ce3fef428 on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44116450171/attempts/1"
+            },
+            {
+              "time": "2026-11-17T15:47:12Z",
+              "action": "pushed",
+              "detail": "Updated branch series_534343 to 9b04ff75e4baf0ebdcf9b5df1035ea0ce3fef428.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44116450171/attempts/1"
+            },
+            {
+              "time": "2026-11-17T15:47:14Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit 9b04ff75e4baf0ebdcf9b5df1035ea0ce3fef428 (request 534343-2347010-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44116450171/attempts/1"
+            },
+            {
+              "time": "2026-11-17T15:47:15Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534343.2347010.apply-robot.final.1794930423.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44116450171/attempts/1"
             }
           ]
         }
@@ -42,6 +111,12 @@
           "action": "queued",
           "detail": "Eligible for testing; 1 patches.",
           "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44107882796/attempts/1"
+        },
+        {
+          "time": "2026-11-17T15:47:09Z",
+          "action": "base-selected",
+          "detail": "main at e77c3bac93f5f62234e5e586b6b02488a43e4557: default.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44116450171/attempts/1"
         }
       ]
     }
