@@ -32,7 +32,7 @@
             "name": "Lucas Vargas Dias",
             "email": "lucas.vdias@magalu.cloud"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "9b04ff75e4baf0ebdcf9b5df1035ea0ce3fef428",
           "pushed": "2026-11-17T15:47:11Z",
           "runs": [
@@ -258,6 +258,12 @@
               "detail": "Sent final email for github-robot: Build and Test (success). Message-ID: <leadtest.534343.2347010.github-robot-build-and-test.final.1794930423.1@ovn.org>.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44122123842/attempts/1",
               "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/44118309291/attempts/1"
+            },
+            {
+              "time": "2026-11-17T16:17:42Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44122123842/attempts/1"
             }
           ]
         }
