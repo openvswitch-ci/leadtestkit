@@ -1,4 +1,25 @@
 {
   "schema": 13,
-  "series": []
+  "series": [
+    {
+      "id": 534343,
+      "name": "",
+      "date": "",
+      "submitter": {
+        "email": ""
+      },
+      "total": 0,
+      "status": "new",
+      "discovered": "2026-11-17T14:44:57Z",
+      "patches": [],
+      "decisions": [
+        {
+          "time": "2026-11-17T14:44:57Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44105137047/attempts/1"
+        }
+      ]
+    }
+  ]
 }
