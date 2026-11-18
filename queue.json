@@ -1,4 +1,65 @@
 {
   "schema": 13,
-  "series": []
+  "series": [
+    {
+      "id": 534601,
+      "name": "[ovs-dev,v2,1/2] ofproto-dpif-upcall: Use a stub buffer for flow get.",
+      "version": 2,
+      "date": "2026-11-18T16:28:25+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/openvswitch/list/?series=534601",
+      "submitter": {
+        "name": "Numan via dev",
+        "email": "ovs-dev@openvswitch.org"
+      },
+      "total": 2,
+      "status": "queued",
+      "discovered": "2026-11-18T16:37:12Z",
+      "patches": [
+        {
+          "id": 2347751,
+          "number": 1,
+          "name": "[ovs-dev,v2,1/2] ofproto-dpif-upcall: Use a stub buffer for flow get.",
+          "msgid": "<20261118162825.219079-1-numans@ovn.org>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-18T16:37:28Z",
+              "action": "discovered",
+              "detail": "Found in series 534601.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44346472064/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2347752,
+          "number": 2,
+          "name": "[ovs-dev,v2,2/2] dpif-offload-tc: Fix buffer handling when translating tc flows.",
+          "msgid": "<20261118162854.284006-1-numans@ovn.org>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-18T16:37:28Z",
+              "action": "discovered",
+              "detail": "Found in series 534601.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44346472064/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-18T16:37:12Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44346472064/attempts/1"
+        },
+        {
+          "time": "2026-11-18T16:37:28Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 2 patches.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44346472064/attempts/1"
+        }
+      ]
+    }
+  ]
 }
