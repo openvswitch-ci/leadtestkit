@@ -11630,6 +11630,59 @@
           "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44122123842/attempts/1"
         }
       ]
+    },
+    {
+      "id": 534502,
+      "name": "[ovs-dev,net-next] net: openvswitch: avoid hashing the network namespace pointer",
+      "version": 1,
+      "date": "2026-11-18T08:37:28+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/openvswitch/list/?series=534502",
+      "submitter": {
+        "name": "Zhengchuan Liang",
+        "email": "zcliangcn@gmail.com"
+      },
+      "total": 1,
+      "status": "skipped",
+      "reason": "kernel patch",
+      "discovered": "2026-11-18T10:07:41Z",
+      "finished": "2026-11-18T10:07:41Z",
+      "patches": [
+        {
+          "id": 2347497,
+          "number": 1,
+          "name": "[ovs-dev,net-next] net: openvswitch: avoid hashing the network namespace pointer",
+          "msgid": "<4e124b37fc972925a825881c50f95eb6b3c2e231.1794989369.git.zcliangcn@gmail.com>",
+          "status": "skipped",
+          "decisions": [
+            {
+              "time": "2026-11-18T10:08:11Z",
+              "action": "discovered",
+              "detail": "Found in series 534502.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44279982602/attempts/1"
+            },
+            {
+              "time": "2026-11-18T10:08:11Z",
+              "action": "skipped",
+              "detail": "Series skipped: kernel patch",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44279982602/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-18T10:07:41Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44279982602/attempts/1"
+        },
+        {
+          "time": "2026-11-18T10:08:11Z",
+          "action": "skipped",
+          "detail": "kernel patch",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44279982602/attempts/1"
+        }
+      ]
     }
   ]
 }
