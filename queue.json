@@ -1124,21 +1124,90 @@
         "email": "trozet@nvidia.com"
       },
       "total": 1,
-      "status": "queued",
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/openvswitch/ovs.git",
+        "branch": "main",
+        "sha": "e77c3bac93f5f62234e5e586b6b02488a43e4557",
+        "why": "default"
+      },
+      "branch": "series_534661",
       "discovered": "2026-11-18T22:35:43Z",
+      "started": "2026-11-18T22:39:45Z",
       "patches": [
         {
           "id": 2347948,
           "number": 1,
           "name": "[ovs-dev,v4] tnl-neigh-cache: Refresh entries before expiration.",
           "msgid": "<20261118222907.2270078-1-trozet@nvidia.com>",
-          "status": "pending",
+          "subject": "[ovs-dev] [PATCH v4] tnl-neigh-cache: Refresh entries before expiration.",
+          "sender": {
+            "name": "Tim Rozet",
+            "email": "trozet@nvidia.com"
+          },
+          "status": "pushed",
+          "sha": "61e94a9ab7d68d47f58e1bd400de71a62376ac6c",
+          "pushed": "2026-11-18T22:39:50Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-18T22:39:50Z",
+              "completed": "2026-11-18T22:39:50Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534661.2347948.apply-robot.final.1795041585.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "534661-2347948-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-18T22:39:54Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
           "decisions": [
             {
               "time": "2026-11-18T22:35:49Z",
               "action": "discovered",
               "detail": "Found in series 534661.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44410942424/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:39:50Z",
+              "action": "applied",
+              "detail": "Commit 61e94a9ab7d68d47f58e1bd400de71a62376ac6c on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44413336845/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:39:52Z",
+              "action": "pushed",
+              "detail": "Updated branch series_534661 to 61e94a9ab7d68d47f58e1bd400de71a62376ac6c.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44413336845/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:39:54Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit 61e94a9ab7d68d47f58e1bd400de71a62376ac6c (request 534661-2347948-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44413336845/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:39:54Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534661.2347948.apply-robot.final.1795041585.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44413336845/attempts/1"
             }
           ]
         }
@@ -1155,6 +1224,12 @@
           "action": "queued",
           "detail": "Eligible for testing; 1 patches.",
           "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44410942424/attempts/1"
+        },
+        {
+          "time": "2026-11-18T22:39:49Z",
+          "action": "base-selected",
+          "detail": "main at e77c3bac93f5f62234e5e586b6b02488a43e4557: default.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44413336845/attempts/1"
         }
       ]
     }
