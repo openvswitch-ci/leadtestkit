@@ -12,21 +12,90 @@
         "email": "david.marchand@redhat.com"
       },
       "total": 1,
-      "status": "queued",
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/openvswitch/ovs.git",
+        "branch": "dpdk-latest",
+        "sha": "37e6baa3c6244af5ccc50526cadca984269ee7bb",
+        "why": "subject: dpdk-latest"
+      },
+      "branch": "series_534515",
       "discovered": "2026-11-18T10:56:50Z",
+      "started": "2026-11-18T10:57:56Z",
       "patches": [
         {
           "id": 2347530,
           "number": 1,
           "name": "[ovs-dev,dpdk-latest] ci: Remove some DPDK dependencies for vhost-user.",
           "msgid": "<20261118104414.1324156-1-david.marchand@redhat.com>",
-          "status": "pending",
+          "subject": "[ovs-dev] [dpdk-latest] ci: Remove some DPDK dependencies for vhost-user.",
+          "sender": {
+            "name": "David Marchand",
+            "email": "david.marchand@redhat.com"
+          },
+          "status": "pushed",
+          "sha": "94f9ceccc66e99c4b63265216144fbd330dd2f3b",
+          "pushed": "2026-11-18T10:58:01Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of dpdk-latest (37e6baa3c624).",
+              "updated": "2026-11-18T10:58:01Z",
+              "completed": "2026-11-18T10:58:01Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534515.2347530.apply-robot.final.1794999476.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "534515-2347530-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-18T10:58:04Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
           "decisions": [
             {
               "time": "2026-11-18T10:57:02Z",
               "action": "discovered",
               "detail": "Found in series 534515.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44287149635/attempts/1"
+            },
+            {
+              "time": "2026-11-18T10:58:01Z",
+              "action": "applied",
+              "detail": "Commit 94f9ceccc66e99c4b63265216144fbd330dd2f3b on base dpdk-latest (37e6baa3c6244af5ccc50526cadca984269ee7bb).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44289450451/attempts/1"
+            },
+            {
+              "time": "2026-11-18T10:58:02Z",
+              "action": "pushed",
+              "detail": "Updated branch series_534515 to 94f9ceccc66e99c4b63265216144fbd330dd2f3b.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44289450451/attempts/1"
+            },
+            {
+              "time": "2026-11-18T10:58:04Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit 94f9ceccc66e99c4b63265216144fbd330dd2f3b (request 534515-2347530-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44289450451/attempts/1"
+            },
+            {
+              "time": "2026-11-18T10:58:05Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534515.2347530.apply-robot.final.1794999476.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44289450451/attempts/1"
             }
           ]
         }
@@ -43,6 +112,12 @@
           "action": "queued",
           "detail": "Eligible for testing; 1 patches.",
           "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44287149635/attempts/1"
+        },
+        {
+          "time": "2026-11-18T10:57:59Z",
+          "action": "base-selected",
+          "detail": "dpdk-latest at 37e6baa3c6244af5ccc50526cadca984269ee7bb: subject: dpdk-latest.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44289450451/attempts/1"
         }
       ]
     }
