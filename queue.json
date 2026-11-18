@@ -1,4 +1,50 @@
 {
   "schema": 13,
-  "series": []
+  "series": [
+    {
+      "id": 534515,
+      "name": "[ovs-dev,dpdk-latest] ci: Remove some DPDK dependencies for vhost-user.",
+      "version": 1,
+      "date": "2026-11-18T10:44:14+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/openvswitch/list/?series=534515",
+      "submitter": {
+        "name": "David Marchand",
+        "email": "david.marchand@redhat.com"
+      },
+      "total": 1,
+      "status": "queued",
+      "discovered": "2026-11-18T10:56:50Z",
+      "patches": [
+        {
+          "id": 2347530,
+          "number": 1,
+          "name": "[ovs-dev,dpdk-latest] ci: Remove some DPDK dependencies for vhost-user.",
+          "msgid": "<20261118104414.1324156-1-david.marchand@redhat.com>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-18T10:57:02Z",
+              "action": "discovered",
+              "detail": "Found in series 534515.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44287149635/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-18T10:56:50Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44287149635/attempts/1"
+        },
+        {
+          "time": "2026-11-18T10:57:02Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 1 patches.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44287149635/attempts/1"
+        }
+      ]
+    }
+  ]
 }
