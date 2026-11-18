@@ -12,21 +12,90 @@
         "email": "ovs-dev@openvswitch.org"
       },
       "total": 2,
-      "status": "queued",
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/openvswitch/ovs.git",
+        "branch": "main",
+        "sha": "e77c3bac93f5f62234e5e586b6b02488a43e4557",
+        "why": "default"
+      },
+      "branch": "series_534601",
       "discovered": "2026-11-18T16:37:12Z",
+      "started": "2026-11-18T16:38:30Z",
       "patches": [
         {
           "id": 2347751,
           "number": 1,
           "name": "[ovs-dev,v2,1/2] ofproto-dpif-upcall: Use a stub buffer for flow get.",
           "msgid": "<20261118162825.219079-1-numans@ovn.org>",
-          "status": "pending",
+          "subject": "[ovs-dev] [PATCH v2 1/2] ofproto-dpif-upcall: Use a stub buffer for flow get.",
+          "sender": {
+            "name": "Numan",
+            "email": "numans@ovn.org"
+          },
+          "status": "pushed",
+          "sha": "a20afc48127df12abd12bfd5a8c6ba2564076fa6",
+          "pushed": "2026-11-18T16:38:40Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-18T16:38:40Z",
+              "completed": "2026-11-18T16:38:40Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534601.2347751.apply-robot.final.1795019910.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "534601-2347751-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-18T16:38:44Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
           "decisions": [
             {
               "time": "2026-11-18T16:37:28Z",
               "action": "discovered",
               "detail": "Found in series 534601.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44346472064/attempts/1"
+            },
+            {
+              "time": "2026-11-18T16:38:40Z",
+              "action": "applied",
+              "detail": "Commit a20afc48127df12abd12bfd5a8c6ba2564076fa6 on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44349360915/attempts/1"
+            },
+            {
+              "time": "2026-11-18T16:38:42Z",
+              "action": "pushed",
+              "detail": "Updated branch series_534601 to a20afc48127df12abd12bfd5a8c6ba2564076fa6.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44349360915/attempts/1"
+            },
+            {
+              "time": "2026-11-18T16:38:44Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit a20afc48127df12abd12bfd5a8c6ba2564076fa6 (request 534601-2347751-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44349360915/attempts/1"
+            },
+            {
+              "time": "2026-11-18T16:38:45Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534601.2347751.apply-robot.final.1795019910.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44349360915/attempts/1"
             }
           ]
         },
@@ -35,13 +104,50 @@
           "number": 2,
           "name": "[ovs-dev,v2,2/2] dpif-offload-tc: Fix buffer handling when translating tc flows.",
           "msgid": "<20261118162854.284006-1-numans@ovn.org>",
-          "status": "pending",
+          "subject": "[ovs-dev] [PATCH v2 2/2] dpif-offload-tc: Fix buffer handling when translating tc flows.",
+          "sender": {
+            "name": "Numan",
+            "email": "numans@ovn.org"
+          },
+          "status": "applied",
+          "sha": "842c65d08e175cbe0660de71774eccc81f21e8c6",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-18T16:38:40Z",
+              "completed": "2026-11-18T16:38:40Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534601.2347752.apply-robot.final.1795019910.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
           "decisions": [
             {
               "time": "2026-11-18T16:37:28Z",
               "action": "discovered",
               "detail": "Found in series 534601.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44346472064/attempts/1"
+            },
+            {
+              "time": "2026-11-18T16:38:40Z",
+              "action": "applied",
+              "detail": "Commit 842c65d08e175cbe0660de71774eccc81f21e8c6 on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44349360915/attempts/1"
+            },
+            {
+              "time": "2026-11-18T16:38:46Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534601.2347752.apply-robot.final.1795019910.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44349360915/attempts/1"
             }
           ]
         }
@@ -58,6 +164,12 @@
           "action": "queued",
           "detail": "Eligible for testing; 2 patches.",
           "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44346472064/attempts/1"
+        },
+        {
+          "time": "2026-11-18T16:38:39Z",
+          "action": "base-selected",
+          "detail": "main at e77c3bac93f5f62234e5e586b6b02488a43e4557: default.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44349360915/attempts/1"
         }
       ]
     }
