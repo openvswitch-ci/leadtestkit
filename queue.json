@@ -1,4 +1,58 @@
 {
   "schema": 13,
-  "series": []
+  "series": [
+    {
+      "id": 534629,
+      "name": "[ovs-dev,net] net: openvswitch: don't WARN on a non-IP packet that needs fragmenting",
+      "version": 1,
+      "date": "2026-11-18T18:06:09+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/openvswitch/list/?series=534629",
+      "submitter": {
+        "name": "Kyuwon Cho",
+        "email": "kyuwoncho18@gmail.com"
+      },
+      "total": 1,
+      "status": "skipped",
+      "reason": "kernel patch",
+      "discovered": "2026-11-18T18:07:48Z",
+      "finished": "2026-11-18T18:07:55Z",
+      "patches": [
+        {
+          "id": 2347824,
+          "number": 1,
+          "name": "[ovs-dev,net] net: openvswitch: don't WARN on a non-IP packet that needs fragmenting",
+          "msgid": "<179502509517.2983267.1652158471891914135@gmail.com>",
+          "status": "skipped",
+          "decisions": [
+            {
+              "time": "2026-11-18T18:08:00Z",
+              "action": "discovered",
+              "detail": "Found in series 534629.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44366212300/attempts/1"
+            },
+            {
+              "time": "2026-11-18T18:08:00Z",
+              "action": "skipped",
+              "detail": "Series skipped: kernel patch",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44366212300/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-18T18:07:48Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44366212300/attempts/1"
+        },
+        {
+          "time": "2026-11-18T18:08:00Z",
+          "action": "skipped",
+          "detail": "kernel patch",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44366212300/attempts/1"
+        }
+      ]
+    }
+  ]
 }
