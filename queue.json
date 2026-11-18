@@ -284,7 +284,7 @@
             "name": "Numan",
             "email": "numans@ovn.org"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "842c65d08e175cbe0660de71774eccc81f21e8c6",
           "pushed": "2026-11-18T16:43:11Z",
           "runs": [
@@ -532,6 +532,12 @@
               "detail": "Replied about github-robot: Build and Test (fail) to \"Numan\" <numans@ovn.org>. Message-ID: <leadtest.534601.2347752.github-robot-build-and-test.reply.1795019910.1@ovn.org>.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44357942089/attempts/1",
               "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/44350475211/attempts/1"
+            },
+            {
+              "time": "2026-11-18T17:34:52Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44357942089/attempts/1"
             }
           ]
         }
