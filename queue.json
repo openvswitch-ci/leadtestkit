@@ -1,4 +1,698 @@
 {
   "schema": 13,
-  "series": []
+  "series": [
+    {
+      "id": 534659,
+      "name": "ct-offload: Introduce a conntrack offload infrastructure.",
+      "version": 3,
+      "date": "2026-11-18T21:55:49+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/openvswitch/list/?series=534659",
+      "submitter": {
+        "name": "Aaron Conole",
+        "email": "aconole@ovn.org"
+      },
+      "total": 12,
+      "cover_id": 2347932,
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/openvswitch/ovs.git",
+        "branch": "main",
+        "sha": "e77c3bac93f5f62234e5e586b6b02488a43e4557",
+        "why": "default"
+      },
+      "branch": "series_534659",
+      "discovered": "2026-11-18T22:15:20Z",
+      "started": "2026-11-18T22:15:33Z",
+      "patches": [
+        {
+          "id": 2347935,
+          "number": 1,
+          "name": "[ovs-dev,v3,01/12] conntrack: Add per-conn storage for conntrack modules.",
+          "msgid": "<20261118215601.404220-2-aconole@ovn.org>",
+          "subject": "[ovs-dev] [PATCH v3 01/12] conntrack: Add per-conn storage for conntrack modules.",
+          "sender": {
+            "name": "Aaron Conole",
+            "email": "aconole@ovn.org"
+          },
+          "status": "pushed",
+          "sha": "c9a2ec219a2d7a58edafc1e018a8a7db3de53616",
+          "pushed": "2026-11-18T22:16:52Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-18T22:16:52Z",
+              "completed": "2026-11-18T22:16:52Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534659.2347935.apply-robot.final.1795040133.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "534659-2347935-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-18T22:16:55Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-18T22:15:33Z",
+              "action": "discovered",
+              "detail": "Found in series 534659.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:16:52Z",
+              "action": "applied",
+              "detail": "Commit c9a2ec219a2d7a58edafc1e018a8a7db3de53616 on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:16:53Z",
+              "action": "pushed",
+              "detail": "Updated branch series_534659 to c9a2ec219a2d7a58edafc1e018a8a7db3de53616.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:16:55Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit c9a2ec219a2d7a58edafc1e018a8a7db3de53616 (request 534659-2347935-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:16:56Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534659.2347935.apply-robot.final.1795040133.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2347933,
+          "number": 2,
+          "name": "[ovs-dev,v3,02/12] conntrack: Introduce an observer pattern infrastructure as a hook.",
+          "msgid": "<20261118215601.404220-3-aconole@ovn.org>",
+          "subject": "[ovs-dev] [PATCH v3 02/12] conntrack: Introduce an observer pattern infrastructure as a hook.",
+          "sender": {
+            "name": "Aaron Conole",
+            "email": "aconole@ovn.org"
+          },
+          "status": "applied",
+          "sha": "d280842f59fe613f5c5bb7e8b46058e809c102fa",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-18T22:16:52Z",
+              "completed": "2026-11-18T22:16:52Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534659.2347933.apply-robot.final.1795040133.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-18T22:15:33Z",
+              "action": "discovered",
+              "detail": "Found in series 534659.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:16:52Z",
+              "action": "applied",
+              "detail": "Commit d280842f59fe613f5c5bb7e8b46058e809c102fa on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:16:57Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534659.2347933.apply-robot.final.1795040133.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2347938,
+          "number": 3,
+          "name": "[ovs-dev,v3,03/12] conntrack: Split the FTP and TFTP handling into separate files.",
+          "msgid": "<20261118215601.404220-4-aconole@ovn.org>",
+          "subject": "[ovs-dev] [PATCH v3 03/12] conntrack: Split the FTP and TFTP handling into separate files.",
+          "sender": {
+            "name": "Aaron Conole",
+            "email": "aconole@ovn.org"
+          },
+          "status": "applied",
+          "sha": "c5f160381c97b546a75c15633539fc91f1a8ca29",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-18T22:16:52Z",
+              "completed": "2026-11-18T22:16:52Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534659.2347938.apply-robot.final.1795040133.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-18T22:15:33Z",
+              "action": "discovered",
+              "detail": "Found in series 534659.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:16:52Z",
+              "action": "applied",
+              "detail": "Commit c5f160381c97b546a75c15633539fc91f1a8ca29 on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:16:57Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534659.2347938.apply-robot.final.1795040133.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2347936,
+          "number": 4,
+          "name": "[ovs-dev,v3,04/12] conntrack-tcp: Convert to using the per-conn storage area.",
+          "msgid": "<20261118215601.404220-5-aconole@ovn.org>",
+          "subject": "[ovs-dev] [PATCH v3 04/12] conntrack-tcp: Convert to using the per-conn storage area.",
+          "sender": {
+            "name": "Aaron Conole",
+            "email": "aconole@ovn.org"
+          },
+          "status": "applied",
+          "sha": "702163af0184e826eeb67cac5cb0b3d27f7ce2b6",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-18T22:16:52Z",
+              "completed": "2026-11-18T22:16:52Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534659.2347936.apply-robot.final.1795040133.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-18T22:15:33Z",
+              "action": "discovered",
+              "detail": "Found in series 534659.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:16:52Z",
+              "action": "applied",
+              "detail": "Commit 702163af0184e826eeb67cac5cb0b3d27f7ce2b6 on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:16:58Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534659.2347936.apply-robot.final.1795040133.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2347937,
+          "number": 5,
+          "name": "[ovs-dev,v3,05/12] ct-offload: Add a new interface as an offload provider.",
+          "msgid": "<20261118215601.404220-6-aconole@ovn.org>",
+          "subject": "[ovs-dev] [PATCH v3 05/12] ct-offload: Add a new interface as an offload provider.",
+          "sender": {
+            "name": "Aaron Conole",
+            "email": "aconole@ovn.org"
+          },
+          "status": "applied",
+          "sha": "4a242425fce09cc43bd5ab76690c796c29cca19e",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-18T22:16:52Z",
+              "completed": "2026-11-18T22:16:52Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534659.2347937.apply-robot.final.1795040133.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-18T22:15:33Z",
+              "action": "discovered",
+              "detail": "Found in series 534659.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:16:52Z",
+              "action": "applied",
+              "detail": "Commit 4a242425fce09cc43bd5ab76690c796c29cca19e on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:16:59Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534659.2347937.apply-robot.final.1795040133.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2347934,
+          "number": 6,
+          "name": "[ovs-dev,v3,06/12] ct-offload: Add batching support.",
+          "msgid": "<20261118215601.404220-7-aconole@ovn.org>",
+          "subject": "[ovs-dev] [PATCH v3 06/12] ct-offload: Add batching support.",
+          "sender": {
+            "name": "Aaron Conole",
+            "email": "aconole@ovn.org"
+          },
+          "status": "applied",
+          "sha": "64e4654f82996b57b9f94b4726236d53786a02f6",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-18T22:16:52Z",
+              "completed": "2026-11-18T22:16:52Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534659.2347934.apply-robot.final.1795040133.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-18T22:15:33Z",
+              "action": "discovered",
+              "detail": "Found in series 534659.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:16:52Z",
+              "action": "applied",
+              "detail": "Commit 64e4654f82996b57b9f94b4726236d53786a02f6 on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:16:59Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534659.2347934.apply-robot.final.1795040133.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2347941,
+          "number": 7,
+          "name": "[ovs-dev,v3,07/12] ct-offload: Add a mark for offloaded connections.",
+          "msgid": "<20261118215601.404220-8-aconole@ovn.org>",
+          "subject": "[ovs-dev] [PATCH v3 07/12] ct-offload: Add a mark for offloaded connections.",
+          "sender": {
+            "name": "Aaron Conole",
+            "email": "aconole@ovn.org"
+          },
+          "status": "applied",
+          "sha": "71158c01f75bf63fdf1b5567ed953669a783c782",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-18T22:16:52Z",
+              "completed": "2026-11-18T22:16:52Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534659.2347941.apply-robot.final.1795040133.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-18T22:15:33Z",
+              "action": "discovered",
+              "detail": "Found in series 534659.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:16:52Z",
+              "action": "applied",
+              "detail": "Commit 71158c01f75bf63fdf1b5567ed953669a783c782 on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:17:00Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534659.2347941.apply-robot.final.1795040133.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2347942,
+          "number": 8,
+          "name": "[ovs-dev,v3,08/12] conntrack: Add calls to ct-offload infrastructure.",
+          "msgid": "<20261118215601.404220-9-aconole@ovn.org>",
+          "subject": "[ovs-dev] [PATCH v3 08/12] conntrack: Add calls to ct-offload infrastructure.",
+          "sender": {
+            "name": "Aaron Conole",
+            "email": "aconole@ovn.org"
+          },
+          "status": "applied",
+          "sha": "4c35d76e2e84fc323d4e67b9af3af2cd6c926257",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-18T22:16:52Z",
+              "completed": "2026-11-18T22:16:52Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534659.2347942.apply-robot.final.1795040133.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-18T22:15:33Z",
+              "action": "discovered",
+              "detail": "Found in series 534659.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:16:52Z",
+              "action": "applied",
+              "detail": "Commit 4c35d76e2e84fc323d4e67b9af3af2cd6c926257 on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:17:01Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534659.2347942.apply-robot.final.1795040133.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2347940,
+          "number": 9,
+          "name": "[ovs-dev,v3,09/12] ct-offload: Tie conntrack offload to dpif hw-offload.",
+          "msgid": "<20261118215601.404220-10-aconole@ovn.org>",
+          "subject": "[ovs-dev] [PATCH v3 09/12] ct-offload: Tie conntrack offload to dpif hw-offload.",
+          "sender": {
+            "name": "Aaron Conole",
+            "email": "aconole@ovn.org"
+          },
+          "status": "applied",
+          "sha": "0b58694ca84552f7da8cb981674a83127b66f8de",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-18T22:16:52Z",
+              "completed": "2026-11-18T22:16:52Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534659.2347940.apply-robot.final.1795040133.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-18T22:15:33Z",
+              "action": "discovered",
+              "detail": "Found in series 534659.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:16:52Z",
+              "action": "applied",
+              "detail": "Commit 0b58694ca84552f7da8cb981674a83127b66f8de on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:17:03Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534659.2347940.apply-robot.final.1795040133.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2347939,
+          "number": 10,
+          "name": "[ovs-dev,v3,10/12] conntrack: Propagate input netdev pointer to conntrack.",
+          "msgid": "<20261118215601.404220-11-aconole@ovn.org>",
+          "subject": "[ovs-dev] [PATCH v3 10/12] conntrack: Propagate input netdev pointer to conntrack.",
+          "sender": {
+            "name": "Aaron Conole",
+            "email": "aconole@ovn.org"
+          },
+          "status": "applied",
+          "sha": "c41231a3f096c8248ee28d55caca4fe88c8fe0e0",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-18T22:16:52Z",
+              "completed": "2026-11-18T22:16:52Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534659.2347939.apply-robot.final.1795040133.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-18T22:15:33Z",
+              "action": "discovered",
+              "detail": "Found in series 534659.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:16:52Z",
+              "action": "applied",
+              "detail": "Commit c41231a3f096c8248ee28d55caca4fe88c8fe0e0 on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:17:03Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534659.2347939.apply-robot.final.1795040133.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2347943,
+          "number": 11,
+          "name": "[ovs-dev,v3,11/12] ct-offload-dummy: Introduce dummy ct offload.",
+          "msgid": "<20261118215601.404220-12-aconole@ovn.org>",
+          "subject": "[ovs-dev] [PATCH v3 11/12] ct-offload-dummy: Introduce dummy ct offload.",
+          "sender": {
+            "name": "Aaron Conole",
+            "email": "aconole@ovn.org"
+          },
+          "status": "applied",
+          "sha": "6d0d553fcbad4a1676c0d708b27f5289d2db46bf",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-18T22:16:52Z",
+              "completed": "2026-11-18T22:16:52Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534659.2347943.apply-robot.final.1795040133.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-18T22:15:33Z",
+              "action": "discovered",
+              "detail": "Found in series 534659.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:16:52Z",
+              "action": "applied",
+              "detail": "Commit 6d0d553fcbad4a1676c0d708b27f5289d2db46bf on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:17:04Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534659.2347943.apply-robot.final.1795040133.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2347944,
+          "number": 12,
+          "name": "[ovs-dev,v3,12/12] Documentation: Announce and describe the conntrack offload feature.",
+          "msgid": "<20261118215601.404220-13-aconole@ovn.org>",
+          "subject": "[ovs-dev] [PATCH v3 12/12] Documentation: Announce and describe the conntrack offload feature.",
+          "sender": {
+            "name": "Aaron Conole",
+            "email": "aconole@ovn.org"
+          },
+          "status": "applied",
+          "sha": "84feb1197826d54b0dd37491522b98170c224527",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-18T22:16:52Z",
+              "completed": "2026-11-18T22:16:52Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534659.2347944.apply-robot.final.1795040133.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-18T22:15:33Z",
+              "action": "discovered",
+              "detail": "Found in series 534659.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:16:52Z",
+              "action": "applied",
+              "detail": "Commit 84feb1197826d54b0dd37491522b98170c224527 on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            },
+            {
+              "time": "2026-11-18T22:17:05Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534659.2347944.apply-robot.final.1795040133.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-18T22:15:20Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+        },
+        {
+          "time": "2026-11-18T22:15:33Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 12 patches.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+        },
+        {
+          "time": "2026-11-18T22:16:50Z",
+          "action": "base-selected",
+          "detail": "main at e77c3bac93f5f62234e5e586b6b02488a43e4557: default.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44408456287/attempts/1"
+        }
+      ]
+    }
+  ]
 }
