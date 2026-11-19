@@ -4919,7 +4919,6 @@
           "sha": "72d31493fba194ffbae9f2c13c9d85770157800c",
           "pushed": "2026-11-11T23:54:48Z",
           "comments_seen": 3789059,
-          "comments_pending": true,
           "runs": [
             {
               "kind": "apply",
@@ -17898,6 +17897,12 @@
               "action": "done",
               "detail": "Testing and reporting are complete.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44568176696/attempts/1"
+            },
+            {
+              "time": "2026-11-19T17:13:59Z",
+              "action": "check-posted",
+              "detail": "success check github-robot-_Build_and_Test from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060518.html",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44570963985/attempts/1"
             }
           ]
         }
