@@ -1,5 +1,5 @@
 {
-  "schema": 13,
+  "schema": 14,
   "series": [
     {
       "id": 532383,
@@ -12000,8 +12000,8 @@
       "date": "2026-11-18T16:28:25+11:00",
       "web_url": "http://patchwork.ozlabs.org/project/openvswitch/list/?series=534601",
       "submitter": {
-        "name": "Numan via dev",
-        "email": "ovs-dev@openvswitch.org"
+        "name": "Numan",
+        "email": "numans@ovn.org"
       },
       "total": 2,
       "status": "done",
