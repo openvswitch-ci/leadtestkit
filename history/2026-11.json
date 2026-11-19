@@ -1830,7 +1830,7 @@
           "status": "done",
           "sha": "79866332033f2716e9d4527642bfbdae2ccee2f1",
           "pushed": "2026-11-10T12:29:56Z",
-          "comments_seen": 3787251,
+          "comments_seen": 3793080,
           "runs": [
             {
               "kind": "apply",
@@ -17312,6 +17312,12 @@
               "action": "done",
               "detail": "Testing and reporting are complete.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44540353019/attempts/1"
+            },
+            {
+              "time": "2026-11-19T14:26:35Z",
+              "action": "check-posted",
+              "detail": "warning check github-robot-_FreeBSD_Build_and_Test from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060500.html",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44543019931/attempts/1"
             }
           ]
         }
