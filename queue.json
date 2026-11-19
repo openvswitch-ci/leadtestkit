@@ -882,7 +882,7 @@
             "name": "Aaron Conole",
             "email": "aconole@ovn.org"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "2c6b15d09501d2b59fc932195850f7abdc372059",
           "pushed": "2026-11-19T12:14:27Z",
           "runs": [
@@ -1150,6 +1150,12 @@
               "time": "2026-11-19T14:19:19Z",
               "action": "reply-skipped",
               "detail": "Reply about github-robot: FreeBSD Build and Test: the workflow did not finish normally (conclusion: cancelled); that is not for the submitter to fix.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44540353019/attempts/1"
+            },
+            {
+              "time": "2026-11-19T14:24:23Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44540353019/attempts/1"
             }
           ]
