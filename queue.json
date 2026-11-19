@@ -1,4 +1,50 @@
 {
   "schema": 14,
-  "series": []
+  "series": [
+    {
+      "id": 534857,
+      "name": "[ovs-dev,v5] tnl-neigh-cache: Refresh entries before expiration.",
+      "version": 5,
+      "date": "2026-11-19T16:47:55+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/openvswitch/list/?series=534857",
+      "submitter": {
+        "name": "Tim Rozet",
+        "email": "trozet@nvidia.com"
+      },
+      "total": 1,
+      "status": "queued",
+      "discovered": "2026-11-19T17:13:29Z",
+      "patches": [
+        {
+          "id": 2348622,
+          "number": 1,
+          "name": "[ovs-dev,v5] tnl-neigh-cache: Refresh entries before expiration.",
+          "msgid": "<20261119164755.1142581-1-trozet@nvidia.com>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-19T17:13:41Z",
+              "action": "discovered",
+              "detail": "Found in series 534857.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44570963985/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-19T17:13:29Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44570963985/attempts/1"
+        },
+        {
+          "time": "2026-11-19T17:13:41Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 1 patches.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44570963985/attempts/1"
+        }
+      ]
+    }
+  ]
 }
