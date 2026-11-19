@@ -1836,7 +1836,7 @@
             "name": "Aaron Conole",
             "email": "aconole@ovn.org"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "4c35d76e2e84fc323d4e67b9af3af2cd6c926257",
           "pushed": "2026-11-19T00:31:10Z",
           "runs": [
@@ -2068,6 +2068,12 @@
               "detail": "Sent final email for github-robot: Build and Test (success). Message-ID: <leadtest.534659.2347942.github-robot-build-and-test.final.1795040133.1@ovn.org>.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44434465959/attempts/1",
               "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/44429653793/attempts/1"
+            },
+            {
+              "time": "2026-11-19T01:29:56Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44434465959/attempts/1"
             }
           ]
         },
