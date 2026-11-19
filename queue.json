@@ -1,4 +1,66 @@
 {
   "schema": 14,
-  "series": []
+  "series": [
+    {
+      "id": 534837,
+      "name": "dpif-offload: Add support for alternative actions.",
+      "version": 5,
+      "date": "2026-11-19T15:47:49+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/openvswitch/list/?series=534837",
+      "submitter": {
+        "name": "Eelco Chaudron",
+        "email": "echaudron@ovn.org"
+      },
+      "total": 2,
+      "cover_id": 2348540,
+      "status": "queued",
+      "discovered": "2026-11-19T15:51:11Z",
+      "patches": [
+        {
+          "id": 2348542,
+          "number": 1,
+          "name": "[ovs-dev,v5,1/2] dpif-offload: Add support for alternative actions.",
+          "msgid": "<0f11e668fb226c7316d8627172065ec8a007a92e.1795100902.git.echaudron@ovn.org>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-19T15:51:17Z",
+              "action": "discovered",
+              "detail": "Found in series 534837.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44556885001/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2348541,
+          "number": 2,
+          "name": "[ovs-dev,v5,2/2] dpif-offload-dummy: Exercise hw_post_process() alt_actions API.",
+          "msgid": "<dda13e0a43a58769330e0bdf614e22f58adf6c73.1795100902.git.echaudron@ovn.org>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-19T15:51:17Z",
+              "action": "discovered",
+              "detail": "Found in series 534837.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44556885001/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-19T15:51:11Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44556885001/attempts/1"
+        },
+        {
+          "time": "2026-11-19T15:51:17Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 2 patches.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44556885001/attempts/1"
+        }
+      ]
+    }
+  ]
 }
