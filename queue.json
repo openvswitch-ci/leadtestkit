@@ -316,7 +316,7 @@
             "name": "Eelco Chaudron",
             "email": "echaudron@ovn.org"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "0c54aba7a6d2a77ae6ec78862b797ae3c5741475",
           "pushed": "2026-11-19T16:03:40Z",
           "runs": [
@@ -542,6 +542,12 @@
               "detail": "Sent final email for github-robot: Build and Test (success). Message-ID: <leadtest.534837.2348541.github-robot-build-and-test.final.1795103586.1@ovn.org>.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44565349123/attempts/1",
               "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/44561807091/attempts/1"
+            },
+            {
+              "time": "2026-11-19T16:45:10Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44568176696/attempts/1"
             }
           ]
         }
