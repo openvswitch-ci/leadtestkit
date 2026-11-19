@@ -33,7 +33,7 @@
             "name": "Tim Rozet",
             "email": "trozet@nvidia.com"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "d367767c4ef6cfc568c312ed4ea0e945b413a4ad",
           "pushed": "2026-11-19T17:15:07Z",
           "runs": [
@@ -259,6 +259,12 @@
               "detail": "Sent final email for github-robot: Build and Test (success). Message-ID: <leadtest.534857.2348622.github-robot-build-and-test.final.1795108503.1@ovn.org>.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44576473206/attempts/1",
               "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/44575147533/attempts/1"
+            },
+            {
+              "time": "2026-11-19T17:44:07Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44579168618/attempts/1"
             }
           ]
         }
