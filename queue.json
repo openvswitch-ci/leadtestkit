@@ -37,7 +37,7 @@
           "status": "done",
           "sha": "32db7301e2e60631e24f9afe541386f08f8b2e41",
           "pushed": "2026-11-19T15:53:23Z",
-          "comments_pending": true,
+          "comments_seen": 3793199,
           "runs": [
             {
               "kind": "apply",
@@ -347,6 +347,7 @@
               "status": "in_progress",
               "updated": "2026-11-19T16:27:09Z",
               "pending": {
+                "check": "posted",
                 "email": "sent",
                 "message_id": "<leadtest.534837.2348541.github-robot-build-and-test.pending.1795103586.1@ovn.org>"
               },
@@ -471,6 +472,12 @@
               "detail": "Build and Test run 44561807091, attempt 1: in_progress.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44562505164/attempts/1",
               "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/44561807091/attempts/1"
+            },
+            {
+              "time": "2026-11-19T16:33:42Z",
+              "action": "check-posted",
+              "detail": "Pending check github-robot-_Build_and_Test linking to https://github.com/openvswitch-ci/ovs-test/actions/runs/44561807091.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44565349123/attempts/1"
             }
           ]
         }
