@@ -496,8 +496,9 @@
             "name": "Aaron Conole",
             "email": "aconole@ovn.org"
           },
-          "status": "applied",
+          "status": "pushed",
           "sha": "59c912edde38d6bdff932803a57a77477514758c",
+          "pushed": "2026-11-19T11:56:10Z",
           "runs": [
             {
               "kind": "apply",
@@ -515,6 +516,17 @@
               "reply": {
                 "email": "skipped"
               }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "534769-2348312-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-19T11:56:13Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
             }
           ],
           "decisions": [
@@ -541,6 +553,18 @@
               "action": "check-posted",
               "detail": "success check apply-robot from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060474.html",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44516483014/attempts/1"
+            },
+            {
+              "time": "2026-11-19T11:56:12Z",
+              "action": "pushed",
+              "detail": "Updated branch series_534769 to 59c912edde38d6bdff932803a57a77477514758c.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44518674556/attempts/1"
+            },
+            {
+              "time": "2026-11-19T11:56:13Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit 59c912edde38d6bdff932803a57a77477514758c (request 534769-2348312-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44518674556/attempts/1"
             }
           ]
         },
