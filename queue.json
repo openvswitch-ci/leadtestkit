@@ -1094,6 +1094,12 @@
               "detail": "Replied about github-robot: Build and Test (fail) to \"Aaron Conole\" <aconole@ovn.org>. Message-ID: <leadtest.534769.2348311.github-robot-build-and-test.reply.1795087654.1@ovn.org>.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44527934187/attempts/1",
               "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/44522041789/attempts/1"
+            },
+            {
+              "time": "2026-11-19T13:14:00Z",
+              "action": "check-posted",
+              "detail": "fail check github-robot-_Build_and_Test from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060495.html",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44530336952/attempts/1"
             }
           ]
         }
