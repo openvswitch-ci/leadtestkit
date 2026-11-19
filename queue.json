@@ -57,12 +57,58 @@
             },
             {
               "kind": "dispatch",
-              "workflow": "leadtest-checkpatch.yml",
+              "workflow": "Checkpatch",
               "file": "leadtest-checkpatch.yml",
               "correlation_id": "534769-2348309-leadtest-checkpatch-1",
-              "status": "requested",
-              "updated": "2026-11-19T11:28:09Z",
-              "pending": {},
+              "id": 44515087367,
+              "attempt": 1,
+              "url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/44515087367",
+              "status": "completed",
+              "conclusion": "success",
+              "result": "success",
+              "updated": "2026-11-19T11:31:40Z",
+              "completed": "2026-11-19T11:31:40Z",
+              "pending": {
+                "check": "skipped",
+                "email": "skipped"
+              },
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534769.2348309.github-robot-checkpatch.final.1795087654.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "push",
+              "workflow": "Build and Test",
+              "id": 44515087767,
+              "attempt": 1,
+              "url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/44515087767",
+              "status": "queued",
+              "updated": "2026-11-19T11:31:40Z",
+              "pending": {
+                "check": "posted",
+                "email": "sent",
+                "message_id": "<leadtest.534769.2348309.github-robot-build-and-test.pending.1795087654.1@ovn.org>"
+              },
+              "final": {},
+              "reply": {}
+            },
+            {
+              "kind": "push",
+              "workflow": "FreeBSD Build and Test",
+              "id": 44515087794,
+              "attempt": 1,
+              "url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/44515087794",
+              "status": "in_progress",
+              "updated": "2026-11-19T11:31:40Z",
+              "pending": {
+                "check": "posted",
+                "email": "sent",
+                "message_id": "<leadtest.534769.2348309.github-robot-freebsd-build-and-test.pending.1795087654.1@ovn.org>"
+              },
               "final": {},
               "reply": {}
             }
@@ -97,6 +143,60 @@
               "action": "report-sent",
               "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534769.2348309.apply-robot.final.1795087654.1@ovn.org>.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1"
+            },
+            {
+              "time": "2026-11-19T11:31:40Z",
+              "action": "workflow-updated",
+              "detail": "Build and Test run 44515087767, attempt 1: queued.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/44515087767/attempts/1"
+            },
+            {
+              "time": "2026-11-19T11:31:40Z",
+              "action": "workflow-updated",
+              "detail": "FreeBSD Build and Test run 44515087794, attempt 1: in_progress.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/44515087794/attempts/1"
+            },
+            {
+              "time": "2026-11-19T11:31:40Z",
+              "action": "workflow-updated",
+              "detail": "Checkpatch run 44515087367, attempt 1: completed: success.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/44515087367/attempts/1"
+            },
+            {
+              "time": "2026-11-19T11:31:46Z",
+              "action": "report-sent",
+              "detail": "Sent final email for github-robot: Checkpatch (success). Message-ID: <leadtest.534769.2348309.github-robot-checkpatch.final.1795087654.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/44515087367/attempts/1"
+            },
+            {
+              "time": "2026-11-19T11:31:47Z",
+              "action": "check-posted",
+              "detail": "Pending check github-robot-_Build_and_Test linking to https://github.com/openvswitch-ci/ovs-test/actions/runs/44515087767.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1"
+            },
+            {
+              "time": "2026-11-19T11:31:49Z",
+              "action": "report-sent",
+              "detail": "Sent pending email for github-robot: Build and Test (pending). Message-ID: <leadtest.534769.2348309.github-robot-build-and-test.pending.1795087654.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/44515087767/attempts/1"
+            },
+            {
+              "time": "2026-11-19T11:31:52Z",
+              "action": "check-posted",
+              "detail": "Pending check github-robot-_FreeBSD_Build_and_Test linking to https://github.com/openvswitch-ci/ovs-test/actions/runs/44515087794.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1"
+            },
+            {
+              "time": "2026-11-19T11:31:53Z",
+              "action": "report-sent",
+              "detail": "Sent pending email for github-robot: FreeBSD Build and Test (pending). Message-ID: <leadtest.534769.2348309.github-robot-freebsd-build-and-test.pending.1795087654.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/44515087794/attempts/1"
             }
           ]
         },
@@ -110,8 +210,9 @@
             "name": "Aaron Conole",
             "email": "aconole@ovn.org"
           },
-          "status": "applied",
+          "status": "pushed",
           "sha": "f90465ec5a40d94305bbb4a55bf045ce636dc903",
+          "pushed": "2026-11-19T11:31:43Z",
           "runs": [
             {
               "kind": "apply",
@@ -129,6 +230,17 @@
               "reply": {
                 "email": "skipped"
               }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "534769-2348310-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-19T11:31:45Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
             }
           ],
           "decisions": [
@@ -154,6 +266,18 @@
               "time": "2026-11-19T11:28:29Z",
               "action": "check-posted",
               "detail": "success check apply-robot from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060472.html",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1"
+            },
+            {
+              "time": "2026-11-19T11:31:44Z",
+              "action": "pushed",
+              "detail": "Updated branch series_534769 to f90465ec5a40d94305bbb4a55bf045ce636dc903.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1"
+            },
+            {
+              "time": "2026-11-19T11:31:45Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit f90465ec5a40d94305bbb4a55bf045ce636dc903 (request 534769-2348310-leadtest-checkpatch-1).",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1"
             }
           ]
