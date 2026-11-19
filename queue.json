@@ -934,15 +934,24 @@
               "id": 44522041789,
               "attempt": 1,
               "url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/44522041789",
-              "status": "in_progress",
-              "updated": "2026-11-19T12:46:50Z",
+              "status": "completed",
+              "conclusion": "failure",
+              "result": "fail",
+              "updated": "2026-11-19T13:12:41Z",
+              "completed": "2026-11-19T13:12:41Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
                 "message_id": "<leadtest.534769.2348311.github-robot-build-and-test.pending.1795087654.1@ovn.org>"
               },
-              "final": {},
-              "reply": {}
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534769.2348311.github-robot-build-and-test.final.1795087654.1@ovn.org>"
+              },
+              "reply": {
+                "email": "sent",
+                "message_id": "<leadtest.534769.2348311.github-robot-build-and-test.reply.1795087654.1@ovn.org>"
+              }
             },
             {
               "kind": "push",
@@ -1063,6 +1072,27 @@
               "action": "workflow-updated",
               "detail": "Build and Test run 44522041789, attempt 1: in_progress.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44523272617/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/44522041789/attempts/1"
+            },
+            {
+              "time": "2026-11-19T13:12:41Z",
+              "action": "workflow-updated",
+              "detail": "Build and Test run 44522041789, attempt 1: completed: failure.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44527934187/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/44522041789/attempts/1"
+            },
+            {
+              "time": "2026-11-19T13:12:46Z",
+              "action": "report-sent",
+              "detail": "Sent final email for github-robot: Build and Test (fail). Message-ID: <leadtest.534769.2348311.github-robot-build-and-test.final.1795087654.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44527934187/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/44522041789/attempts/1"
+            },
+            {
+              "time": "2026-11-19T13:12:46Z",
+              "action": "reply-sent",
+              "detail": "Replied about github-robot: Build and Test (fail) to \"Aaron Conole\" <aconole@ovn.org>. Message-ID: <leadtest.534769.2348311.github-robot-build-and-test.reply.1795087654.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44527934187/attempts/1",
               "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/44522041789/attempts/1"
             }
           ]
