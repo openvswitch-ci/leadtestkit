@@ -368,15 +368,23 @@
               "id": 44561807091,
               "attempt": 1,
               "url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/44561807091",
-              "status": "in_progress",
-              "updated": "2026-11-19T16:27:09Z",
+              "status": "completed",
+              "conclusion": "success",
+              "result": "success",
+              "updated": "2026-11-19T16:43:02Z",
+              "completed": "2026-11-19T16:43:02Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
                 "message_id": "<leadtest.534837.2348541.github-robot-build-and-test.pending.1795103586.1@ovn.org>"
               },
-              "final": {},
-              "reply": {}
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534837.2348541.github-robot-build-and-test.final.1795103586.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
             },
             {
               "kind": "push",
@@ -520,6 +528,20 @@
               "action": "check-posted",
               "detail": "success check github-robot-_FreeBSD_Build_and_Test from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060514.html",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44565349123/attempts/1"
+            },
+            {
+              "time": "2026-11-19T16:43:02Z",
+              "action": "workflow-updated",
+              "detail": "Build and Test run 44561807091, attempt 1: completed: success.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44565349123/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/44561807091/attempts/1"
+            },
+            {
+              "time": "2026-11-19T16:43:04Z",
+              "action": "report-sent",
+              "detail": "Sent final email for github-robot: Build and Test (success). Message-ID: <leadtest.534837.2348541.github-robot-build-and-test.final.1795103586.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44565349123/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/44561807091/attempts/1"
             }
           ]
         }
