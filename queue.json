@@ -34,7 +34,7 @@
             "name": "Eelco Chaudron",
             "email": "echaudron@ovn.org"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "32db7301e2e60631e24f9afe541386f08f8b2e41",
           "pushed": "2026-11-19T15:53:23Z",
           "comments_pending": true,
@@ -273,6 +273,12 @@
               "detail": "Replied about github-robot: Build and Test (fail) to \"Eelco Chaudron\" <echaudron@ovn.org>. Message-ID: <leadtest.534837.2348542.github-robot-build-and-test.reply.1795103586.1@ovn.org>.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44562505164/attempts/1",
               "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/44559883563/attempts/1"
+            },
+            {
+              "time": "2026-11-19T16:29:59Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44565349123/attempts/1"
             }
           ]
         },
