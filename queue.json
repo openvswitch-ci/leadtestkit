@@ -1,4 +1,282 @@
 {
   "schema": 13,
-  "series": []
+  "series": [
+    {
+      "id": 534769,
+      "name": "conntrack: Use a cryptographic PRNG for conntrack hashing.",
+      "version": 5,
+      "date": "2026-11-19T11:15:01+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/openvswitch/list/?series=534769",
+      "submitter": {
+        "name": "Aaron Conole",
+        "email": "aconole@ovn.org"
+      },
+      "total": 4,
+      "cover_id": 2348308,
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/openvswitch/ovs.git",
+        "branch": "main",
+        "sha": "e77c3bac93f5f62234e5e586b6b02488a43e4557",
+        "why": "default"
+      },
+      "branch": "series_534769",
+      "discovered": "2026-11-19T11:27:17Z",
+      "started": "2026-11-19T11:27:34Z",
+      "patches": [
+        {
+          "id": 2348309,
+          "number": 1,
+          "name": "[ovs-dev,v5,1/4] byte-order: Add le32 conversion routines.",
+          "msgid": "<20261119111505.443198-2-aconole@ovn.org>",
+          "subject": "[ovs-dev] [PATCH v5 1/4] byte-order: Add le32 conversion routines.",
+          "sender": {
+            "name": "Aaron Conole",
+            "email": "aconole@ovn.org"
+          },
+          "status": "pushed",
+          "sha": "b686f38a086b04aeb4b4cc23f5263e7fc5a40477",
+          "pushed": "2026-11-19T11:28:06Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-19T11:28:06Z",
+              "completed": "2026-11-19T11:28:06Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534769.2348309.apply-robot.final.1795087654.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "534769-2348309-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-19T11:28:09Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-19T11:27:33Z",
+              "action": "discovered",
+              "detail": "Found in series 534769.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1"
+            },
+            {
+              "time": "2026-11-19T11:28:06Z",
+              "action": "applied",
+              "detail": "Commit b686f38a086b04aeb4b4cc23f5263e7fc5a40477 on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1"
+            },
+            {
+              "time": "2026-11-19T11:28:07Z",
+              "action": "pushed",
+              "detail": "Updated branch series_534769 to b686f38a086b04aeb4b4cc23f5263e7fc5a40477.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1"
+            },
+            {
+              "time": "2026-11-19T11:28:09Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit b686f38a086b04aeb4b4cc23f5263e7fc5a40477 (request 534769-2348309-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1"
+            },
+            {
+              "time": "2026-11-19T11:28:10Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534769.2348309.apply-robot.final.1795087654.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2348310,
+          "number": 2,
+          "name": "[ovs-dev,v5,2/4] random: Implement a ChaCha20 based CSPRNG.",
+          "msgid": "<20261119111505.443198-3-aconole@ovn.org>",
+          "subject": "[ovs-dev] [PATCH v5 2/4] random: Implement a ChaCha20 based CSPRNG.",
+          "sender": {
+            "name": "Aaron Conole",
+            "email": "aconole@ovn.org"
+          },
+          "status": "applied",
+          "sha": "f90465ec5a40d94305bbb4a55bf045ce636dc903",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-19T11:28:06Z",
+              "completed": "2026-11-19T11:28:06Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534769.2348310.apply-robot.final.1795087654.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-19T11:27:33Z",
+              "action": "discovered",
+              "detail": "Found in series 534769.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1"
+            },
+            {
+              "time": "2026-11-19T11:28:06Z",
+              "action": "applied",
+              "detail": "Commit f90465ec5a40d94305bbb4a55bf045ce636dc903 on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1"
+            },
+            {
+              "time": "2026-11-19T11:28:10Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534769.2348310.apply-robot.final.1795087654.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2348312,
+          "number": 3,
+          "name": "[ovs-dev,v5,3/4] random: Provide OpenSSL EVP cipher as a CSPRNG source.",
+          "msgid": "<20261119111505.443198-4-aconole@ovn.org>",
+          "subject": "[ovs-dev] [PATCH v5 3/4] random: Provide OpenSSL EVP cipher as a CSPRNG source.",
+          "sender": {
+            "name": "Aaron Conole",
+            "email": "aconole@ovn.org"
+          },
+          "status": "applied",
+          "sha": "59c912edde38d6bdff932803a57a77477514758c",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-19T11:28:06Z",
+              "completed": "2026-11-19T11:28:06Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534769.2348312.apply-robot.final.1795087654.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-19T11:27:33Z",
+              "action": "discovered",
+              "detail": "Found in series 534769.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1"
+            },
+            {
+              "time": "2026-11-19T11:28:06Z",
+              "action": "applied",
+              "detail": "Commit 59c912edde38d6bdff932803a57a77477514758c on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1"
+            },
+            {
+              "time": "2026-11-19T11:28:13Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534769.2348312.apply-robot.final.1795087654.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2348311,
+          "number": 4,
+          "name": "[ovs-dev,v5,4/4] conntrack: Use a cryptographic PRNG for conntrack hashing.",
+          "msgid": "<20261119111505.443198-5-aconole@ovn.org>",
+          "subject": "[ovs-dev] [PATCH v5 4/4] conntrack: Use a cryptographic PRNG for conntrack hashing.",
+          "sender": {
+            "name": "Aaron Conole",
+            "email": "aconole@ovn.org"
+          },
+          "status": "applied",
+          "sha": "2c6b15d09501d2b59fc932195850f7abdc372059",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-19T11:28:06Z",
+              "completed": "2026-11-19T11:28:06Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534769.2348311.apply-robot.final.1795087654.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-19T11:27:33Z",
+              "action": "discovered",
+              "detail": "Found in series 534769.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1"
+            },
+            {
+              "time": "2026-11-19T11:28:06Z",
+              "action": "applied",
+              "detail": "Commit 2c6b15d09501d2b59fc932195850f7abdc372059 on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1"
+            },
+            {
+              "time": "2026-11-19T11:28:15Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534769.2348311.apply-robot.final.1795087654.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-19T11:27:17Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1"
+        },
+        {
+          "time": "2026-11-19T11:27:33Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 4 patches.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1"
+        },
+        {
+          "time": "2026-11-19T11:28:04Z",
+          "action": "base-selected",
+          "detail": "main at e77c3bac93f5f62234e5e586b6b02488a43e4557: default.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44514230515/attempts/1"
+        }
+      ]
+    }
+  ]
 }
