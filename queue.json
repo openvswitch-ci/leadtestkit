@@ -13,21 +13,90 @@
       },
       "total": 2,
       "cover_id": 2348540,
-      "status": "queued",
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/openvswitch/ovs.git",
+        "branch": "main",
+        "sha": "e77c3bac93f5f62234e5e586b6b02488a43e4557",
+        "why": "default"
+      },
+      "branch": "series_534837",
       "discovered": "2026-11-19T15:51:11Z",
+      "started": "2026-11-19T15:53:06Z",
       "patches": [
         {
           "id": 2348542,
           "number": 1,
           "name": "[ovs-dev,v5,1/2] dpif-offload: Add support for alternative actions.",
           "msgid": "<0f11e668fb226c7316d8627172065ec8a007a92e.1795100902.git.echaudron@ovn.org>",
-          "status": "pending",
+          "subject": "[ovs-dev] [PATCH v5 1/2] dpif-offload: Add support for alternative actions.",
+          "sender": {
+            "name": "Eelco Chaudron",
+            "email": "echaudron@ovn.org"
+          },
+          "status": "pushed",
+          "sha": "32db7301e2e60631e24f9afe541386f08f8b2e41",
+          "pushed": "2026-11-19T15:53:23Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-19T15:53:23Z",
+              "completed": "2026-11-19T15:53:23Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534837.2348542.apply-robot.final.1795103586.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "534837-2348542-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-19T15:53:27Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
           "decisions": [
             {
               "time": "2026-11-19T15:51:17Z",
               "action": "discovered",
               "detail": "Found in series 534837.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44556885001/attempts/1"
+            },
+            {
+              "time": "2026-11-19T15:53:23Z",
+              "action": "applied",
+              "detail": "Commit 32db7301e2e60631e24f9afe541386f08f8b2e41 on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44559686397/attempts/1"
+            },
+            {
+              "time": "2026-11-19T15:53:25Z",
+              "action": "pushed",
+              "detail": "Updated branch series_534837 to 32db7301e2e60631e24f9afe541386f08f8b2e41.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44559686397/attempts/1"
+            },
+            {
+              "time": "2026-11-19T15:53:27Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit 32db7301e2e60631e24f9afe541386f08f8b2e41 (request 534837-2348542-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44559686397/attempts/1"
+            },
+            {
+              "time": "2026-11-19T15:53:30Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534837.2348542.apply-robot.final.1795103586.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44559686397/attempts/1"
             }
           ]
         },
@@ -36,13 +105,50 @@
           "number": 2,
           "name": "[ovs-dev,v5,2/2] dpif-offload-dummy: Exercise hw_post_process() alt_actions API.",
           "msgid": "<dda13e0a43a58769330e0bdf614e22f58adf6c73.1795100902.git.echaudron@ovn.org>",
-          "status": "pending",
+          "subject": "[ovs-dev] [PATCH v5 2/2] dpif-offload-dummy: Exercise hw_post_process() alt_actions API.",
+          "sender": {
+            "name": "Eelco Chaudron",
+            "email": "echaudron@ovn.org"
+          },
+          "status": "applied",
+          "sha": "0c54aba7a6d2a77ae6ec78862b797ae3c5741475",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-19T15:53:23Z",
+              "completed": "2026-11-19T15:53:23Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.534837.2348541.apply-robot.final.1795103586.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
           "decisions": [
             {
               "time": "2026-11-19T15:51:17Z",
               "action": "discovered",
               "detail": "Found in series 534837.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44556885001/attempts/1"
+            },
+            {
+              "time": "2026-11-19T15:53:23Z",
+              "action": "applied",
+              "detail": "Commit 0c54aba7a6d2a77ae6ec78862b797ae3c5741475 on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44559686397/attempts/1"
+            },
+            {
+              "time": "2026-11-19T15:53:30Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.534837.2348541.apply-robot.final.1795103586.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44559686397/attempts/1"
             }
           ]
         }
@@ -59,6 +165,103 @@
           "action": "queued",
           "detail": "Eligible for testing; 2 patches.",
           "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44556885001/attempts/1"
+        },
+        {
+          "time": "2026-11-19T15:53:21Z",
+          "action": "base-selected",
+          "detail": "main at e77c3bac93f5f62234e5e586b6b02488a43e4557: default.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44559686397/attempts/1"
+        }
+      ]
+    },
+    {
+      "id": 534840,
+      "name": "tracing: improve symbolic printing",
+      "version": 8,
+      "date": "2026-11-19T15:48:42+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/openvswitch/list/?series=534840",
+      "submitter": {
+        "name": "Johannes Berg",
+        "email": "johannes@sipsolutions.net"
+      },
+      "total": 4,
+      "cover_id": 2348548,
+      "status": "queued",
+      "discovered": "2026-11-19T15:52:51Z",
+      "patches": [
+        {
+          "id": 2348551,
+          "number": 1,
+          "name": "[ovs-dev,v8,1/4] tracing: add __print_sym() to replace __print_symbolic()",
+          "msgid": "<20261119155133.355849-7-johannes@sipsolutions.net>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-19T15:53:03Z",
+              "action": "discovered",
+              "detail": "Found in series 534840.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44559686397/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2348547,
+          "number": 2,
+          "name": "[ovs-dev,v8,2/4] tracing/timer: use __print_sym()",
+          "msgid": "<20261119155133.355849-8-johannes@sipsolutions.net>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-19T15:53:03Z",
+              "action": "discovered",
+              "detail": "Found in series 534840.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44559686397/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2348550,
+          "number": 3,
+          "name": "[ovs-dev,v8,3/4] net: dropreason: use new __print_sym() in tracing",
+          "msgid": "<20261119155133.355849-9-johannes@sipsolutions.net>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-19T15:53:03Z",
+              "action": "discovered",
+              "detail": "Found in series 534840.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44559686397/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2348549,
+          "number": 4,
+          "name": "[ovs-dev,v8,4/4] net: drop_monitor: use drop_reason_lookup()",
+          "msgid": "<20261119155133.355849-10-johannes@sipsolutions.net>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-19T15:53:03Z",
+              "action": "discovered",
+              "detail": "Found in series 534840.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44559686397/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-19T15:52:51Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44559686397/attempts/1"
+        },
+        {
+          "time": "2026-11-19T15:53:03Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 4 patches.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44559686397/attempts/1"
         }
       ]
     }
