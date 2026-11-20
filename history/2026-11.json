@@ -18835,6 +18835,59 @@
           "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44722864757/attempts/1"
         }
       ]
+    },
+    {
+      "id": 535111,
+      "name": "[ovs-dev,net,v4] net: openvswitch: make transport checksums writable",
+      "version": 4,
+      "date": "2026-11-20T19:11:15+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/openvswitch/list/?series=535111",
+      "submitter": {
+        "name": "Kyle Zeng",
+        "email": "kylebot@openai.com"
+      },
+      "total": 1,
+      "status": "skipped",
+      "reason": "kernel patch",
+      "discovered": "2026-11-20T19:19:21Z",
+      "finished": "2026-11-20T19:19:21Z",
+      "patches": [
+        {
+          "id": 2349438,
+          "number": 1,
+          "name": "[ovs-dev,net,v4] net: openvswitch: make transport checksums writable",
+          "msgid": "<20261120191115.39932-1-kylebot@openai.com>",
+          "status": "skipped",
+          "decisions": [
+            {
+              "time": "2026-11-20T19:19:33Z",
+              "action": "discovered",
+              "detail": "Found in series 535111.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44799178083/attempts/1"
+            },
+            {
+              "time": "2026-11-20T19:19:33Z",
+              "action": "skipped",
+              "detail": "Series skipped: kernel patch",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44799178083/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-20T19:19:21Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44799178083/attempts/1"
+        },
+        {
+          "time": "2026-11-20T19:19:33Z",
+          "action": "skipped",
+          "detail": "kernel patch",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44799178083/attempts/1"
+        }
+      ]
     }
   ]
 }
