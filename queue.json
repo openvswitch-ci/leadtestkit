@@ -1,4 +1,50 @@
 {
   "schema": 14,
-  "series": []
+  "series": [
+    {
+      "id": 535007,
+      "name": "[ovs-dev] route-table: Fix build with clang 23.",
+      "version": 1,
+      "date": "2026-11-20T10:18:39+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/openvswitch/list/?series=535007",
+      "submitter": {
+        "name": "David Marchand",
+        "email": "david.marchand@redhat.com"
+      },
+      "total": 1,
+      "status": "queued",
+      "discovered": "2026-11-20T10:23:22Z",
+      "patches": [
+        {
+          "id": 2349144,
+          "number": 1,
+          "name": "[ovs-dev] route-table: Fix build with clang 23.",
+          "msgid": "<20261120101839.2176418-1-david.marchand@redhat.com>",
+          "status": "pending",
+          "decisions": [
+            {
+              "time": "2026-11-20T10:23:35Z",
+              "action": "discovered",
+              "detail": "Found in series 535007.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44716513675/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-20T10:23:22Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44716513675/attempts/1"
+        },
+        {
+          "time": "2026-11-20T10:23:35Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 1 patches.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44716513675/attempts/1"
+        }
+      ]
+    }
+  ]
 }
