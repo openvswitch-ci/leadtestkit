@@ -12,21 +12,90 @@
         "email": "david.marchand@redhat.com"
       },
       "total": 1,
-      "status": "queued",
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/openvswitch/ovs.git",
+        "branch": "main",
+        "sha": "e77c3bac93f5f62234e5e586b6b02488a43e4557",
+        "why": "default"
+      },
+      "branch": "series_535007",
       "discovered": "2026-11-20T10:23:22Z",
+      "started": "2026-11-20T10:24:39Z",
       "patches": [
         {
           "id": 2349144,
           "number": 1,
           "name": "[ovs-dev] route-table: Fix build with clang 23.",
           "msgid": "<20261120101839.2176418-1-david.marchand@redhat.com>",
-          "status": "pending",
+          "subject": "[ovs-dev] [PATCH] route-table: Fix build with clang 23.",
+          "sender": {
+            "name": "David Marchand",
+            "email": "david.marchand@redhat.com"
+          },
+          "status": "pushed",
+          "sha": "3276074820c72938ec89af905bf8e3c95e97f652",
+          "pushed": "2026-11-20T10:24:44Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-20T10:24:44Z",
+              "completed": "2026-11-20T10:24:44Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535007.2349144.apply-robot.final.1795170279.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "535007-2349144-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-20T10:24:47Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
           "decisions": [
             {
               "time": "2026-11-20T10:23:35Z",
               "action": "discovered",
               "detail": "Found in series 535007.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44716513675/attempts/1"
+            },
+            {
+              "time": "2026-11-20T10:24:44Z",
+              "action": "applied",
+              "detail": "Commit 3276074820c72938ec89af905bf8e3c95e97f652 on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44718672217/attempts/1"
+            },
+            {
+              "time": "2026-11-20T10:24:45Z",
+              "action": "pushed",
+              "detail": "Updated branch series_535007 to 3276074820c72938ec89af905bf8e3c95e97f652.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44718672217/attempts/1"
+            },
+            {
+              "time": "2026-11-20T10:24:47Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit 3276074820c72938ec89af905bf8e3c95e97f652 (request 535007-2349144-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44718672217/attempts/1"
+            },
+            {
+              "time": "2026-11-20T10:24:48Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535007.2349144.apply-robot.final.1795170279.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44718672217/attempts/1"
             }
           ]
         }
@@ -43,6 +112,12 @@
           "action": "queued",
           "detail": "Eligible for testing; 1 patches.",
           "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44716513675/attempts/1"
+        },
+        {
+          "time": "2026-11-20T10:24:42Z",
+          "action": "base-selected",
+          "detail": "main at e77c3bac93f5f62234e5e586b6b02488a43e4557: default.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/44718672217/attempts/1"
         }
       ]
     }
