@@ -33,7 +33,7 @@
             "name": "Bekei Park",
             "email": "forq999@iteasy.co.kr"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "3f6aae80a01b8e35cbccf5f5b6a3750a2411c9ff",
           "pushed": "2026-11-22T14:56:16Z",
           "runs": [
@@ -265,6 +265,12 @@
               "detail": "Sent final email for github-robot: Build and Test (success). Message-ID: <leadtest.535290.2349932.github-robot-build-and-test.final.1795359370.1@ovn.org>.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45037943928/attempts/1",
               "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45035513094/attempts/1"
+            },
+            {
+              "time": "2026-11-22T15:26:02Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45037943928/attempts/1"
             }
           ]
         }
