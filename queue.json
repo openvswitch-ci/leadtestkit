@@ -1901,15 +1901,24 @@
               "id": 45204985656,
               "attempt": 1,
               "url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45204985656",
-              "status": "in_progress",
-              "updated": "2026-11-23T15:55:55Z",
+              "status": "completed",
+              "conclusion": "failure",
+              "result": "fail",
+              "updated": "2026-11-23T16:07:51Z",
+              "completed": "2026-11-23T16:07:51Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
                 "message_id": "<leadtest.535439.2350361.github-robot-build-and-test.pending.1795440185.1@ovn.org>"
               },
-              "final": {},
-              "reply": {}
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535439.2350361.github-robot-build-and-test.final.1795440185.1@ovn.org>"
+              },
+              "reply": {
+                "email": "sent",
+                "message_id": "<leadtest.535439.2350361.github-robot-build-and-test.reply.1795440185.1@ovn.org>"
+              }
             },
             {
               "kind": "push",
@@ -2059,6 +2068,27 @@
               "detail": "Build and Test run 45204985656, attempt 1: in_progress.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45210079697/attempts/1",
               "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45204985656/attempts/1"
+            },
+            {
+              "time": "2026-11-23T16:07:51Z",
+              "action": "workflow-updated",
+              "detail": "Build and Test run 45204985656, attempt 1: completed: failure.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45210079697/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45204985656/attempts/1"
+            },
+            {
+              "time": "2026-11-23T16:07:56Z",
+              "action": "report-sent",
+              "detail": "Sent final email for github-robot: Build and Test (fail). Message-ID: <leadtest.535439.2350361.github-robot-build-and-test.final.1795440185.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45210079697/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45204985656/attempts/1"
+            },
+            {
+              "time": "2026-11-23T16:07:57Z",
+              "action": "reply-sent",
+              "detail": "Replied about github-robot: Build and Test (fail) to \"Felix Huettner\" <felix.huettner@digits.schwarz>. Message-ID: <leadtest.535439.2350361.github-robot-build-and-test.reply.1795440185.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45210079697/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45204985656/attempts/1"
             }
           ]
         },
@@ -2124,8 +2154,8 @@
               "id": 45207700544,
               "attempt": 1,
               "url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45207700544",
-              "status": "queued",
-              "updated": "2026-11-23T15:43:15Z",
+              "status": "in_progress",
+              "updated": "2026-11-23T16:07:52Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
@@ -2269,6 +2299,13 @@
               "action": "check-posted",
               "detail": "success check github-robot-_Checkpatch from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060726.html",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45210079697/attempts/1"
+            },
+            {
+              "time": "2026-11-23T16:07:52Z",
+              "action": "workflow-updated",
+              "detail": "Build and Test run 45207700544, attempt 1: in_progress.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45210079697/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45207700544/attempts/1"
             }
           ]
         },
