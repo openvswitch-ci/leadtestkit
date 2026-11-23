@@ -13,10 +13,770 @@
       },
       "total": 14,
       "cover_id": 2350355,
-      "status": "new",
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/openvswitch/ovs.git",
+        "branch": "main",
+        "sha": "e77c3bac93f5f62234e5e586b6b02488a43e4557",
+        "why": "default"
+      },
+      "branch": "series_535439",
       "discovered": "2026-11-23T12:22:53Z",
-      "checked": "2026-11-23T12:52:55Z",
-      "patches": [],
+      "started": "2026-11-23T13:23:05Z",
+      "patches": [
+        {
+          "id": 2350357,
+          "number": 1,
+          "name": "[ovs-dev,v6,01/14] test-conntrack: Benchmark for conntrack on tcp.",
+          "msgid": "<6fe983291bcc4766981ddc555c3412976cf26dbd.1795432857.git.felix.huettner@digits.schwarz>",
+          "subject": "[ovs-dev] [PATCH v6 01/14] test-conntrack: Benchmark for conntrack on tcp.",
+          "sender": {
+            "name": "Felix Huettner",
+            "email": "felix.huettner@digits.schwarz"
+          },
+          "status": "pushed",
+          "sha": "43aa7917e809936509a42f1889d2e5d4d13dcadf",
+          "pushed": "2026-11-23T13:24:30Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-23T13:24:30Z",
+              "completed": "2026-11-23T13:24:30Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535439.2350357.apply-robot.final.1795440185.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "535439-2350357-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-23T13:24:33Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-23T13:23:02Z",
+              "action": "discovered",
+              "detail": "Found in series 535439.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:30Z",
+              "action": "applied",
+              "detail": "Commit 43aa7917e809936509a42f1889d2e5d4d13dcadf on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:32Z",
+              "action": "pushed",
+              "detail": "Updated branch series_535439 to 43aa7917e809936509a42f1889d2e5d4d13dcadf.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:33Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit 43aa7917e809936509a42f1889d2e5d4d13dcadf (request 535439-2350357-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:35Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535439.2350357.apply-robot.final.1795440185.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2350356,
+          "number": 2,
+          "name": "[ovs-dev,v6,02/14] conntrack: Do not always take insert locks.",
+          "msgid": "<db244de39032be03fe0004c74ba83b7c29d75257.1795432857.git.felix.huettner@digits.schwarz>",
+          "subject": "[ovs-dev] [PATCH v6 02/14] conntrack: Do not always take insert locks.",
+          "sender": {
+            "name": "Felix Huettner",
+            "email": "felix.huettner@digits.schwarz"
+          },
+          "status": "applied",
+          "sha": "9f46799de3fa7191c729858312318d69597ba376",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-23T13:24:30Z",
+              "completed": "2026-11-23T13:24:30Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535439.2350356.apply-robot.final.1795440185.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-23T13:23:02Z",
+              "action": "discovered",
+              "detail": "Found in series 535439.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:30Z",
+              "action": "applied",
+              "detail": "Commit 9f46799de3fa7191c729858312318d69597ba376 on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:36Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535439.2350356.apply-robot.final.1795440185.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2350358,
+          "number": 3,
+          "name": "[ovs-dev,v6,03/14] conntrack: Use cmap for expectations.",
+          "msgid": "<a35c85d39ea647bfbfd35d6d19e8b888bb9c7351.1795432857.git.felix.huettner@digits.schwarz>",
+          "subject": "[ovs-dev] [PATCH v6 03/14] conntrack: Use cmap for expectations.",
+          "sender": {
+            "name": "Felix Huettner",
+            "email": "felix.huettner@digits.schwarz"
+          },
+          "status": "applied",
+          "sha": "06c1cbc3d3212c3497adc74605319793ae169bd1",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-23T13:24:30Z",
+              "completed": "2026-11-23T13:24:30Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535439.2350358.apply-robot.final.1795440185.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-23T13:23:02Z",
+              "action": "discovered",
+              "detail": "Found in series 535439.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:30Z",
+              "action": "applied",
+              "detail": "Commit 06c1cbc3d3212c3497adc74605319793ae169bd1 on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:37Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535439.2350358.apply-robot.final.1795440185.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2350410,
+          "number": 4,
+          "name": "[ovs-dev,v6,04/14] conntrack: Add more coverage values for conntrack.",
+          "msgid": "<78a5b5820bb1fabd24c6de16a45388fd791af999.1795432857.git.felix.huettner@digits.schwarz>",
+          "subject": "[ovs-dev] [PATCH v6 04/14] conntrack: Add more coverage values for conntrack.",
+          "sender": {
+            "name": "Felix Huettner",
+            "email": "felix.huettner@digits.schwarz"
+          },
+          "status": "applied",
+          "sha": "c3a815053a6a1ad0ca53afe0eccd73c1573e689a",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-23T13:24:30Z",
+              "completed": "2026-11-23T13:24:30Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535439.2350410.apply-robot.final.1795440185.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-23T13:23:02Z",
+              "action": "discovered",
+              "detail": "Found in series 535439.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:30Z",
+              "action": "applied",
+              "detail": "Commit c3a815053a6a1ad0ca53afe0eccd73c1573e689a on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:38Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535439.2350410.apply-robot.final.1795440185.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2350359,
+          "number": 5,
+          "name": "[ovs-dev,v6,05/14] conntrack: Extract ct zone to separate struct.",
+          "msgid": "<71e74cc988d5a086b2d159ac8b9e11352354672c.1795432857.git.felix.huettner@digits.schwarz>",
+          "subject": "[ovs-dev] [PATCH v6 05/14] conntrack: Extract ct zone to separate struct.",
+          "sender": {
+            "name": "Felix Huettner",
+            "email": "felix.huettner@digits.schwarz"
+          },
+          "status": "applied",
+          "sha": "98d2aa97317ec305e58b357011f9044e1e5075e7",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-23T13:24:30Z",
+              "completed": "2026-11-23T13:24:30Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535439.2350359.apply-robot.final.1795440185.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-23T13:23:02Z",
+              "action": "discovered",
+              "detail": "Found in series 535439.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:30Z",
+              "action": "applied",
+              "detail": "Commit 98d2aa97317ec305e58b357011f9044e1e5075e7 on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:38Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535439.2350359.apply-robot.final.1795440185.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2350360,
+          "number": 6,
+          "name": "[ovs-dev,v6,06/14] conntrack: Add per zone lock.",
+          "msgid": "<e91b494ddec89e6743fc0b5afbdab07c0b1276ea.1795432857.git.felix.huettner@digits.schwarz>",
+          "subject": "[ovs-dev] [PATCH v6 06/14] conntrack: Add per zone lock.",
+          "sender": {
+            "name": "Felix Huettner",
+            "email": "felix.huettner@digits.schwarz"
+          },
+          "status": "applied",
+          "sha": "989e61462f138977b9921050f077c9e6bf746c5f",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-23T13:24:30Z",
+              "completed": "2026-11-23T13:24:30Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535439.2350360.apply-robot.final.1795440185.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-23T13:23:02Z",
+              "action": "discovered",
+              "detail": "Found in series 535439.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:30Z",
+              "action": "applied",
+              "detail": "Commit 989e61462f138977b9921050f077c9e6bf746c5f on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:39Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535439.2350360.apply-robot.final.1795440185.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2350375,
+          "number": 7,
+          "name": "[ovs-dev,v6,07/14] conntrack: Move zone limits to per zone struct.",
+          "msgid": "<8bdb34ea6672b91257b4cc7606c4616cfab8a42c.1795432857.git.felix.huettner@digits.schwarz>",
+          "subject": "[ovs-dev] [PATCH v6 07/14] conntrack: Move zone limits to per zone struct.",
+          "sender": {
+            "name": "Felix Huettner",
+            "email": "felix.huettner@digits.schwarz"
+          },
+          "status": "applied",
+          "sha": "498d633e5792bade6c190d412d9dcb4e2bfd63b3",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-23T13:24:30Z",
+              "completed": "2026-11-23T13:24:30Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535439.2350375.apply-robot.final.1795440185.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-23T13:23:02Z",
+              "action": "discovered",
+              "detail": "Found in series 535439.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:30Z",
+              "action": "applied",
+              "detail": "Commit 498d633e5792bade6c190d412d9dcb4e2bfd63b3 on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:40Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535439.2350375.apply-robot.final.1795440185.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2350361,
+          "number": 8,
+          "name": "[ovs-dev,v6,08/14] conntrack: Remove exp_lists for connection cleaning.",
+          "msgid": "<0ba07bffbfe4ae317243cef97476ad131b1ae150.1795432857.git.felix.huettner@digits.schwarz>",
+          "subject": "[ovs-dev] [PATCH v6 08/14] conntrack: Remove exp_lists for connection cleaning.",
+          "sender": {
+            "name": "Felix Huettner",
+            "email": "felix.huettner@digits.schwarz"
+          },
+          "status": "applied",
+          "sha": "aff97159bb9554b39e7bd03f8468e910cbd3f10c",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-23T13:24:30Z",
+              "completed": "2026-11-23T13:24:30Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535439.2350361.apply-robot.final.1795440185.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-23T13:23:02Z",
+              "action": "discovered",
+              "detail": "Found in series 535439.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:30Z",
+              "action": "applied",
+              "detail": "Commit aff97159bb9554b39e7bd03f8468e910cbd3f10c on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:40Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535439.2350361.apply-robot.final.1795440185.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2350363,
+          "number": 9,
+          "name": "[ovs-dev,v6,09/14] conntrack: Clean zones partially.",
+          "msgid": "<01544d382437da09c9b96704a8f55d0a86c02e90.1795432857.git.felix.huettner@digits.schwarz>",
+          "subject": "[ovs-dev] [PATCH v6 09/14] conntrack: Clean zones partially.",
+          "sender": {
+            "name": "Felix Huettner",
+            "email": "felix.huettner@digits.schwarz"
+          },
+          "status": "applied",
+          "sha": "6d6241e0169ace9a7170a520159bc588e6d50a6e",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-23T13:24:30Z",
+              "completed": "2026-11-23T13:24:30Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535439.2350363.apply-robot.final.1795440185.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-23T13:23:02Z",
+              "action": "discovered",
+              "detail": "Found in series 535439.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:30Z",
+              "action": "applied",
+              "detail": "Commit 6d6241e0169ace9a7170a520159bc588e6d50a6e on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:41Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535439.2350363.apply-robot.final.1795440185.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2350364,
+          "number": 10,
+          "name": "[ovs-dev,v6,10/14] cmap: Support switching between cursor and position.",
+          "msgid": "<0e99823b754f047ad3ebfd48dd5dc87c5098440a.1795432857.git.felix.huettner@digits.schwarz>",
+          "subject": "[ovs-dev] [PATCH v6 10/14] cmap: Support switching between cursor and position.",
+          "sender": {
+            "name": "Felix Huettner",
+            "email": "felix.huettner@digits.schwarz"
+          },
+          "status": "applied",
+          "sha": "8eb0212e7a961d642c151aa145953169fc5dcb9b",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-23T13:24:30Z",
+              "completed": "2026-11-23T13:24:30Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535439.2350364.apply-robot.final.1795440185.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-23T13:23:02Z",
+              "action": "discovered",
+              "detail": "Found in series 535439.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:30Z",
+              "action": "applied",
+              "detail": "Commit 8eb0212e7a961d642c151aa145953169fc5dcb9b on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:42Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535439.2350364.apply-robot.final.1795440185.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2350362,
+          "number": 11,
+          "name": "[ovs-dev,v6,11/14] conntrack: Use cmap cursor for iteration.",
+          "msgid": "<df9b83fca8c2a37e164cc8a0e5b285f055c46122.1795432857.git.felix.huettner@digits.schwarz>",
+          "subject": "[ovs-dev] [PATCH v6 11/14] conntrack: Use cmap cursor for iteration.",
+          "sender": {
+            "name": "Felix Huettner",
+            "email": "felix.huettner@digits.schwarz"
+          },
+          "status": "applied",
+          "sha": "e6cb823a93e8b35999992691f6b0db1b665cdf8a",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-23T13:24:30Z",
+              "completed": "2026-11-23T13:24:30Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535439.2350362.apply-robot.final.1795440185.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-23T13:23:02Z",
+              "action": "discovered",
+              "detail": "Found in series 535439.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:30Z",
+              "action": "applied",
+              "detail": "Commit e6cb823a93e8b35999992691f6b0db1b665cdf8a on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:43Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535439.2350362.apply-robot.final.1795440185.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2350365,
+          "number": 12,
+          "name": "[ovs-dev,v6,12/14] conntrack: Batch conn deletions in a single zone.",
+          "msgid": "<746da6d20250d7a5090893dee9f0adc651005234.1795432857.git.felix.huettner@digits.schwarz>",
+          "subject": "[ovs-dev] [PATCH v6 12/14] conntrack: Batch conn deletions in a single zone.",
+          "sender": {
+            "name": "Felix Huettner",
+            "email": "felix.huettner@digits.schwarz"
+          },
+          "status": "applied",
+          "sha": "c2613e826964894410f2ac3b1b33974fd6d3d253",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-23T13:24:30Z",
+              "completed": "2026-11-23T13:24:30Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535439.2350365.apply-robot.final.1795440185.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-23T13:23:02Z",
+              "action": "discovered",
+              "detail": "Found in series 535439.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:30Z",
+              "action": "applied",
+              "detail": "Commit c2613e826964894410f2ac3b1b33974fd6d3d253 on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:44Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535439.2350365.apply-robot.final.1795440185.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2350376,
+          "number": 13,
+          "name": "[ovs-dev,v6,13/14] conntrack: Immediately continue cleaning under load.",
+          "msgid": "<9ec0bccfe86ad86b6b6a1bfaa9e502ee222f6ad1.1795432857.git.felix.huettner@digits.schwarz>",
+          "subject": "[ovs-dev] [PATCH v6 13/14] conntrack: Immediately continue cleaning under load.",
+          "sender": {
+            "name": "Felix Huettner",
+            "email": "felix.huettner@digits.schwarz"
+          },
+          "status": "applied",
+          "sha": "010ce72c02fff8c45ed99154b71cd8353c8f9ee6",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-23T13:24:30Z",
+              "completed": "2026-11-23T13:24:30Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535439.2350376.apply-robot.final.1795440185.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-23T13:23:02Z",
+              "action": "discovered",
+              "detail": "Found in series 535439.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:30Z",
+              "action": "applied",
+              "detail": "Commit 010ce72c02fff8c45ed99154b71cd8353c8f9ee6 on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:45Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535439.2350376.apply-robot.final.1795440185.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2350366,
+          "number": 14,
+          "name": "[ovs-dev,v6,14/14] NEWS: Add news about conntrack improvements.",
+          "msgid": "<eadf3e73d2889734be1aa5acf65fae3a6927c17c.1795432857.git.felix.huettner@digits.schwarz>",
+          "subject": "[ovs-dev] [PATCH v6 14/14] NEWS: Add news about conntrack improvements.",
+          "sender": {
+            "name": "Felix Huettner",
+            "email": "felix.huettner@digits.schwarz"
+          },
+          "status": "applied",
+          "sha": "9b84831c920434cb68c0f4d8b709912fae2c48d2",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-23T13:24:30Z",
+              "completed": "2026-11-23T13:24:30Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535439.2350366.apply-robot.final.1795440185.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-23T13:23:02Z",
+              "action": "discovered",
+              "detail": "Found in series 535439.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:30Z",
+              "action": "applied",
+              "detail": "Commit 9b84831c920434cb68c0f4d8b709912fae2c48d2 on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            },
+            {
+              "time": "2026-11-23T13:24:45Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535439.2350366.apply-robot.final.1795440185.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+            }
+          ]
+        }
+      ],
       "decisions": [
         {
           "time": "2026-11-23T12:22:53Z",
@@ -29,6 +789,18 @@
           "action": "incomplete",
           "detail": "Waiting for all 14 patches.",
           "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45173675463/attempts/1"
+        },
+        {
+          "time": "2026-11-23T13:23:02Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 14 patches.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
+        },
+        {
+          "time": "2026-11-23T13:24:28Z",
+          "action": "base-selected",
+          "detail": "main at e77c3bac93f5f62234e5e586b6b02488a43e4557: default.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45183267946/attempts/1"
         }
       ]
     }
