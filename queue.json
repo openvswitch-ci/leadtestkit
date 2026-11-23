@@ -1,4 +1,36 @@
 {
   "schema": 14,
-  "series": []
+  "series": [
+    {
+      "id": 535439,
+      "name": "Multiple conntrack performance improvements.",
+      "version": 6,
+      "date": "2026-11-23T12:15:41+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/openvswitch/list/?series=535439",
+      "submitter": {
+        "name": "Felix Huettner",
+        "email": "felix.huettner@digits.schwarz"
+      },
+      "total": 14,
+      "cover_id": 2350355,
+      "status": "new",
+      "discovered": "2026-11-23T12:22:53Z",
+      "checked": "2026-11-23T12:22:53Z",
+      "patches": [],
+      "decisions": [
+        {
+          "time": "2026-11-23T12:22:53Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45173675463/attempts/1"
+        },
+        {
+          "time": "2026-11-23T12:22:58Z",
+          "action": "incomplete",
+          "detail": "Waiting for all 14 patches.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45173675463/attempts/1"
+        }
+      ]
+    }
+  ]
 }
