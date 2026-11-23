@@ -17386,7 +17386,7 @@
           "status": "done",
           "sha": "32db7301e2e60631e24f9afe541386f08f8b2e41",
           "pushed": "2026-11-23T07:52:57Z",
-          "comments_seen": 3794704,
+          "comments_seen": 3794708,
           "runs": [
             {
               "kind": "apply",
@@ -17768,6 +17768,18 @@
               "action": "done",
               "detail": "Testing and reporting are complete.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45134247643/attempts/1"
+            },
+            {
+              "time": "2026-11-23T08:08:22Z",
+              "action": "check-posted",
+              "detail": "warning check github-robot-_Checkpatch from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060672.html",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45136085359/attempts/1"
+            },
+            {
+              "time": "2026-11-23T08:08:35Z",
+              "action": "check-posted",
+              "detail": "success check github-robot-_Build_and_Test from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060673.html",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45136085359/attempts/1"
             }
           ]
         },
