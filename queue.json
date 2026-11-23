@@ -3407,7 +3407,7 @@
             "name": "Felix Huettner",
             "email": "felix.huettner@digits.schwarz"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "9b84831c920434cb68c0f4d8b709912fae2c48d2",
           "pushed": "2026-11-23T17:13:45Z",
           "runs": [
@@ -3639,6 +3639,12 @@
               "detail": "Sent final email for github-robot: Build and Test (success). Message-ID: <leadtest.535439.2350366.github-robot-build-and-test.final.1795440185.1@ovn.org>.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45229673788/attempts/1",
               "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45225349051/attempts/1"
+            },
+            {
+              "time": "2026-11-23T17:53:46Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45232307222/attempts/1"
             }
           ]
         }
