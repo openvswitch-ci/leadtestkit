@@ -865,15 +865,23 @@
               "id": 45386153119,
               "attempt": 1,
               "url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45386153119",
-              "status": "in_progress",
-              "updated": "2026-11-24T12:05:06Z",
+              "status": "completed",
+              "conclusion": "success",
+              "result": "success",
+              "updated": "2026-11-24T12:21:40Z",
+              "completed": "2026-11-24T12:21:40Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
                 "message_id": "<leadtest.535654.2351081.github-robot-build-and-test.pending.1795517770.1@ovn.org>"
               },
-              "final": {},
-              "reply": {}
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535654.2351081.github-robot-build-and-test.final.1795517770.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
             },
             {
               "kind": "push",
@@ -1017,6 +1025,20 @@
               "action": "check-posted",
               "detail": "success check github-robot-_FreeBSD_Build_and_Test from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060879.html",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45390487140/attempts/1"
+            },
+            {
+              "time": "2026-11-24T12:21:40Z",
+              "action": "workflow-updated",
+              "detail": "Build and Test run 45386153119, attempt 1: completed: success.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45390487140/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45386153119/attempts/1"
+            },
+            {
+              "time": "2026-11-24T12:21:43Z",
+              "action": "report-sent",
+              "detail": "Sent final email for github-robot: Build and Test (success). Message-ID: <leadtest.535654.2351081.github-robot-build-and-test.final.1795517770.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45390487140/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45386153119/attempts/1"
             }
           ]
         },
@@ -1082,8 +1104,8 @@
               "id": 45388373218,
               "attempt": 1,
               "url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45388373218",
-              "status": "queued",
-              "updated": "2026-11-24T11:56:59Z",
+              "status": "in_progress",
+              "updated": "2026-11-24T12:21:41Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
@@ -1233,6 +1255,13 @@
               "action": "check-posted",
               "detail": "success check github-robot-_FreeBSD_Build_and_Test from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060884.html",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45390487140/attempts/1"
+            },
+            {
+              "time": "2026-11-24T12:21:41Z",
+              "action": "workflow-updated",
+              "detail": "Build and Test run 45388373218, attempt 1: in_progress.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45390487140/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45388373218/attempts/1"
             }
           ]
         },
@@ -1314,15 +1343,23 @@
               "id": 45390805812,
               "attempt": 1,
               "url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45390805812",
-              "status": "in_progress",
-              "updated": "2026-11-24T12:13:56Z",
+              "status": "completed",
+              "conclusion": "success",
+              "result": "success",
+              "updated": "2026-11-24T12:21:41Z",
+              "completed": "2026-11-24T12:21:41Z",
               "pending": {
                 "check": "posted",
                 "email": "sent",
                 "message_id": "<leadtest.535654.2351085.github-robot-freebsd-build-and-test.pending.1795517770.1@ovn.org>"
               },
-              "final": {},
-              "reply": {}
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535654.2351085.github-robot-freebsd-build-and-test.final.1795517770.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
             }
           ],
           "decisions": [
@@ -1421,6 +1458,20 @@
               "action": "check-posted",
               "detail": "success check github-robot-_Checkpatch from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060887.html",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45390487140/attempts/1"
+            },
+            {
+              "time": "2026-11-24T12:21:41Z",
+              "action": "workflow-updated",
+              "detail": "FreeBSD Build and Test run 45390805812, attempt 1: completed: success.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45390487140/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45390805812/attempts/1"
+            },
+            {
+              "time": "2026-11-24T12:21:44Z",
+              "action": "report-sent",
+              "detail": "Sent final email for github-robot: FreeBSD Build and Test (success). Message-ID: <leadtest.535654.2351085.github-robot-freebsd-build-and-test.final.1795517770.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45390487140/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45390805812/attempts/1"
             }
           ]
         },
