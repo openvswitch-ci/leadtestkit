@@ -476,8 +476,9 @@
             "name": "Bekei Park",
             "email": "forq999@iteasy.co.kr"
           },
-          "status": "applied",
+          "status": "pushed",
           "sha": "e5c316500b6366b0d230b25d430196fb7c8cb05a",
+          "pushed": "2026-11-24T04:24:19Z",
           "runs": [
             {
               "kind": "apply",
@@ -495,6 +496,17 @@
               "reply": {
                 "email": "skipped"
               }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "535582-2350811-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-24T04:24:22Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
             }
           ],
           "decisions": [
@@ -521,6 +533,18 @@
               "action": "check-posted",
               "detail": "success check apply-robot from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060811.html",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45324167112/attempts/1"
+            },
+            {
+              "time": "2026-11-24T04:24:20Z",
+              "action": "pushed",
+              "detail": "Updated branch series_535582 to e5c316500b6366b0d230b25d430196fb7c8cb05a.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45325932106/attempts/1"
+            },
+            {
+              "time": "2026-11-24T04:24:22Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit e5c316500b6366b0d230b25d430196fb7c8cb05a (request 535582-2350811-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45325932106/attempts/1"
             }
           ]
         },
