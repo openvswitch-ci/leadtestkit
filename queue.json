@@ -226,6 +226,18 @@
               "detail": "Sent final email for github-robot: FreeBSD Build and Test (success). Message-ID: <leadtest.535582.2350808.github-robot-freebsd-build-and-test.final.1795492751.1@ovn.org>.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45324167112/attempts/1",
               "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45323266393/attempts/1"
+            },
+            {
+              "time": "2026-11-24T04:09:09Z",
+              "action": "check-posted",
+              "detail": "success check apply-robot from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060809.html",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45324167112/attempts/1"
+            },
+            {
+              "time": "2026-11-24T04:09:56Z",
+              "action": "check-posted",
+              "detail": "success check github-robot-_Checkpatch from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060813.html",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45324167112/attempts/1"
             }
           ]
         },
@@ -302,6 +314,12 @@
               "action": "dispatched",
               "detail": "leadtest-checkpatch.yml from main for commit 41ae9924b4948203467f73da6ac2e9829c969f5a (request 535582-2350810-leadtest-checkpatch-1).",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45324167112/attempts/1"
+            },
+            {
+              "time": "2026-11-24T04:09:20Z",
+              "action": "check-posted",
+              "detail": "success check apply-robot from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060810.html",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45324167112/attempts/1"
             }
           ]
         },
@@ -354,6 +372,12 @@
               "action": "report-sent",
               "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535582.2350811.apply-robot.final.1795492751.1@ovn.org>.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45322463685/attempts/1"
+            },
+            {
+              "time": "2026-11-24T04:09:32Z",
+              "action": "check-posted",
+              "detail": "success check apply-robot from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060811.html",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45324167112/attempts/1"
             }
           ]
         },
@@ -406,6 +430,12 @@
               "action": "report-sent",
               "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535582.2350812.apply-robot.final.1795492751.1@ovn.org>.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45322463685/attempts/1"
+            },
+            {
+              "time": "2026-11-24T04:09:44Z",
+              "action": "check-posted",
+              "detail": "success check apply-robot from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060812.html",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45324167112/attempts/1"
             }
           ]
         }
