@@ -3402,7 +3402,7 @@
             "name": "David Marchand",
             "email": "david.marchand@redhat.com"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "1abca3a26fcfb404f306e80ad3a71cae8d589bb7",
           "pushed": "2026-11-24T14:29:18Z",
           "runs": [
@@ -3633,6 +3633,12 @@
               "time": "2026-11-24T15:11:52Z",
               "action": "check-posted",
               "detail": "success check github-robot-_FreeBSD_Build_and_Test from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060930.html",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45418952902/attempts/1"
+            },
+            {
+              "time": "2026-11-24T15:15:34Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45418952902/attempts/1"
             }
           ]
