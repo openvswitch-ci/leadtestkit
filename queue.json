@@ -3566,8 +3566,9 @@
             "name": "David Marchand",
             "email": "david.marchand@redhat.com"
           },
-          "status": "applied",
+          "status": "pushed",
           "sha": "02f0aa098085bc106918c3be716f407346009349",
+          "pushed": "2026-11-24T14:46:16Z",
           "runs": [
             {
               "kind": "apply",
@@ -3585,6 +3586,17 @@
               "reply": {
                 "email": "skipped"
               }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "535654-2351096-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-24T14:46:21Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
             }
           ],
           "decisions": [
@@ -3611,6 +3623,18 @@
               "action": "check-posted",
               "detail": "success check apply-robot from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060862.html",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45381241387/attempts/1"
+            },
+            {
+              "time": "2026-11-24T14:46:18Z",
+              "action": "pushed",
+              "detail": "Updated branch series_535654 to 02f0aa098085bc106918c3be716f407346009349.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45416162828/attempts/1"
+            },
+            {
+              "time": "2026-11-24T14:46:21Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit 02f0aa098085bc106918c3be716f407346009349 (request 535654-2351096-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45416162828/attempts/1"
             }
           ]
         }
