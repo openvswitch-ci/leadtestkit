@@ -2535,12 +2535,58 @@
             },
             {
               "kind": "dispatch",
-              "workflow": "leadtest-checkpatch.yml",
+              "workflow": "Checkpatch",
               "file": "leadtest-checkpatch.yml",
               "correlation_id": "535654-2351091-leadtest-checkpatch-1",
-              "status": "requested",
-              "updated": "2026-11-24T13:35:42Z",
-              "pending": {},
+              "id": 45405043901,
+              "attempt": 1,
+              "url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45405043901",
+              "status": "completed",
+              "conclusion": "success",
+              "result": "warning",
+              "details": "Warnings:\n== Checking \"patch.mbox\" ==\nWARNING: Comment with 'xxx' marker\n#186 FILE: lib/netdev-dpdk-common.c:222:\n         * XXX: this is a really rough method of provisioning memory.\n\nWARNING: Comment with 'xxx' marker\n#198 FILE: lib/netdev-dpdk-common.c:234:\n         * XXX: rough estimation of number of mbufs required for this port:\n\nLines checked: 1205, Warnings: 2, Errors: 0",
+              "updated": "2026-11-24T13:40:10Z",
+              "completed": "2026-11-24T13:40:10Z",
+              "pending": {
+                "check": "skipped",
+                "email": "skipped"
+              },
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535654.2351091.github-robot-checkpatch.final.1795517770.1@ovn.org>"
+              },
+              "reply": {
+                "email": "sent",
+                "message_id": "<leadtest.535654.2351091.github-robot-checkpatch.reply.1795517770.1@ovn.org>"
+              }
+            },
+            {
+              "kind": "push",
+              "workflow": "Build and Test",
+              "id": 45405042663,
+              "attempt": 1,
+              "url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45405042663",
+              "status": "queued",
+              "updated": "2026-11-24T13:40:10Z",
+              "pending": {
+                "email": "sent",
+                "message_id": "<leadtest.535654.2351091.github-robot-build-and-test.pending.1795517770.1@ovn.org>"
+              },
+              "final": {},
+              "reply": {}
+            },
+            {
+              "kind": "push",
+              "workflow": "FreeBSD Build and Test",
+              "id": 45405042693,
+              "attempt": 1,
+              "url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45405042693",
+              "status": "in_progress",
+              "updated": "2026-11-24T13:40:10Z",
+              "pending": {
+                "email": "sent",
+                "message_id": "<leadtest.535654.2351091.github-robot-freebsd-build-and-test.pending.1795517770.1@ovn.org>"
+              },
               "final": {},
               "reply": {}
             }
@@ -2581,6 +2627,62 @@
               "action": "dispatched",
               "detail": "leadtest-checkpatch.yml from main for commit 699c3e1e9e7fc59ac9443d19efe714c6cbceb100 (request 535654-2351091-leadtest-checkpatch-1).",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45402755918/attempts/1"
+            },
+            {
+              "time": "2026-11-24T13:40:10Z",
+              "action": "workflow-updated",
+              "detail": "Build and Test run 45405042663, attempt 1: queued.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45402755918/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45405042663/attempts/1"
+            },
+            {
+              "time": "2026-11-24T13:40:10Z",
+              "action": "workflow-updated",
+              "detail": "FreeBSD Build and Test run 45405042693, attempt 1: in_progress.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45402755918/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45405042693/attempts/1"
+            },
+            {
+              "time": "2026-11-24T13:40:10Z",
+              "action": "workflow-updated",
+              "detail": "Checkpatch run 45405043901, attempt 1: completed: success.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45402755918/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45405043901/attempts/1"
+            },
+            {
+              "time": "2026-11-24T13:40:10Z",
+              "action": "workflow-warnings",
+              "detail": "Checkpatch run 45405043901, attempt 1 passed with 1 warning:\n== Checking \"patch.mbox\" ==\nWARNING: Comment with 'xxx' marker\n#186 FILE: lib/netdev-dpdk-common.c:222:\n         * XXX: this is a really rough method of provisioning memory.\n\nWARNING: Comment with 'xxx' marker\n#198 FILE: lib/netdev-dpdk-common.c:234:\n         * XXX: rough estimation of number of mbufs required for this port:\n\nLines checked: 1205, Warnings: 2, Errors: 0",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45402755918/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45405043901/attempts/1"
+            },
+            {
+              "time": "2026-11-24T13:40:17Z",
+              "action": "report-sent",
+              "detail": "Sent final email for github-robot: Checkpatch (warning). Message-ID: <leadtest.535654.2351091.github-robot-checkpatch.final.1795517770.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45402755918/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45405043901/attempts/1"
+            },
+            {
+              "time": "2026-11-24T13:40:18Z",
+              "action": "reply-sent",
+              "detail": "Replied about github-robot: Checkpatch (warning) to \"David Marchand\" <david.marchand@redhat.com>, ovs-dev@openvswitch.org. Message-ID: <leadtest.535654.2351091.github-robot-checkpatch.reply.1795517770.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45402755918/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45405043901/attempts/1"
+            },
+            {
+              "time": "2026-11-24T13:40:19Z",
+              "action": "report-sent",
+              "detail": "Sent pending email for github-robot: Build and Test (pending). Message-ID: <leadtest.535654.2351091.github-robot-build-and-test.pending.1795517770.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45402755918/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45405042663/attempts/1"
+            },
+            {
+              "time": "2026-11-24T13:40:20Z",
+              "action": "report-sent",
+              "detail": "Sent pending email for github-robot: FreeBSD Build and Test (pending). Message-ID: <leadtest.535654.2351091.github-robot-freebsd-build-and-test.pending.1795517770.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45402755918/attempts/1",
+              "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45405042693/attempts/1"
             }
           ]
         },
