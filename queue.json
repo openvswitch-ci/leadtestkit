@@ -3126,6 +3126,12 @@
               "action": "done",
               "detail": "Testing and reporting are complete.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45413349904/attempts/1"
+            },
+            {
+              "time": "2026-11-24T15:11:41Z",
+              "action": "check-posted",
+              "detail": "fail check github-robot-_Build_and_Test from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060929.html",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45418952902/attempts/1"
             }
           ]
         },
@@ -3377,6 +3383,12 @@
               "action": "done",
               "detail": "Testing and reporting are complete.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45416162828/attempts/1"
+            },
+            {
+              "time": "2026-11-24T15:12:14Z",
+              "action": "check-posted",
+              "detail": "success check github-robot-_Build_and_Test from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060934.html",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45418952902/attempts/1"
             }
           ]
         },
@@ -3610,6 +3622,18 @@
               "detail": "Sent final email for github-robot: Build and Test (success). Message-ID: <leadtest.535654.2351094.github-robot-build-and-test.final.1795517770.1@ovn.org>.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45418952902/attempts/1",
               "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45414641290/attempts/1"
+            },
+            {
+              "time": "2026-11-24T15:11:29Z",
+              "action": "check-posted",
+              "detail": "success check github-robot-_Checkpatch from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060926.html",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45418952902/attempts/1"
+            },
+            {
+              "time": "2026-11-24T15:11:52Z",
+              "action": "check-posted",
+              "detail": "success check github-robot-_FreeBSD_Build_and_Test from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060930.html",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45418952902/attempts/1"
             }
           ]
         },
@@ -3815,6 +3839,18 @@
               "action": "check-posted",
               "detail": "Pending check github-robot-_Build_and_Test linking to https://github.com/openvswitch-ci/ovs-test/actions/runs/45417819814.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45418952902/attempts/1"
+            },
+            {
+              "time": "2026-11-24T15:12:03Z",
+              "action": "check-posted",
+              "detail": "success check github-robot-_Checkpatch from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060932.html",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45418952902/attempts/1"
+            },
+            {
+              "time": "2026-11-24T15:12:25Z",
+              "action": "check-posted",
+              "detail": "success check github-robot-_FreeBSD_Build_and_Test from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060935.html",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45418952902/attempts/1"
             }
           ]
         }
@@ -3837,102 +3873,6 @@
           "action": "base-selected",
           "detail": "main at 000c7330c1c98aae7e4a870eee8f2db6a6fa1d97: default.",
           "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
-        }
-      ]
-    },
-    {
-      "id": 535707,
-      "name": "net: openvswitch: fix a feature leak on a failed change",
-      "version": 6,
-      "date": "2026-11-24T14:50:30+11:00",
-      "web_url": "http://patchwork.ozlabs.org/project/openvswitch/list/?series=535707",
-      "submitter": {
-        "name": "Minxi Hou",
-        "email": "houminxi@gmail.com"
-      },
-      "total": 3,
-      "cover_id": 2351283,
-      "status": "skipped",
-      "reason": "kernel patch",
-      "discovered": "2026-11-24T15:10:58Z",
-      "finished": "2026-11-24T15:11:04Z",
-      "patches": [
-        {
-          "id": 2351284,
-          "number": 1,
-          "name": "[ovs-dev,net,v6,1/3] net: openvswitch: read the datapath features once when sending an upcall",
-          "msgid": "<20261124145033.627044-2-houminxi@gmail.com>",
-          "status": "skipped",
-          "decisions": [
-            {
-              "time": "2026-11-24T15:11:10Z",
-              "action": "discovered",
-              "detail": "Found in series 535707.",
-              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45418952902/attempts/1"
-            },
-            {
-              "time": "2026-11-24T15:11:10Z",
-              "action": "skipped",
-              "detail": "Series skipped: kernel patch",
-              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45418952902/attempts/1"
-            }
-          ]
-        },
-        {
-          "id": 2351285,
-          "number": 2,
-          "name": "[ovs-dev,net,v6,2/3] net: openvswitch: do not record user features when the change fails",
-          "msgid": "<20261124145033.627044-3-houminxi@gmail.com>",
-          "status": "skipped",
-          "decisions": [
-            {
-              "time": "2026-11-24T15:11:10Z",
-              "action": "discovered",
-              "detail": "Found in series 535707.",
-              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45418952902/attempts/1"
-            },
-            {
-              "time": "2026-11-24T15:11:10Z",
-              "action": "skipped",
-              "detail": "Series skipped: kernel patch",
-              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45418952902/attempts/1"
-            }
-          ]
-        },
-        {
-          "id": 2351286,
-          "number": 3,
-          "name": "[ovs-dev,net,v6,3/3] selftests/net/openvswitch: check that a failed set keeps the features",
-          "msgid": "<20261124145033.627044-4-houminxi@gmail.com>",
-          "status": "skipped",
-          "decisions": [
-            {
-              "time": "2026-11-24T15:11:10Z",
-              "action": "discovered",
-              "detail": "Found in series 535707.",
-              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45418952902/attempts/1"
-            },
-            {
-              "time": "2026-11-24T15:11:10Z",
-              "action": "skipped",
-              "detail": "Series skipped: kernel patch",
-              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45418952902/attempts/1"
-            }
-          ]
-        }
-      ],
-      "decisions": [
-        {
-          "time": "2026-11-24T15:10:58Z",
-          "action": "discovered",
-          "detail": "Found in Patchwork.",
-          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45418952902/attempts/1"
-        },
-        {
-          "time": "2026-11-24T15:11:10Z",
-          "action": "skipped",
-          "detail": "kernel patch",
-          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45418952902/attempts/1"
         }
       ]
     }
