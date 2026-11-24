@@ -1302,6 +1302,12 @@
               "action": "done",
               "detail": "Testing and reporting are complete.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45392873886/attempts/1"
+            },
+            {
+              "time": "2026-11-24T12:44:00Z",
+              "action": "check-posted",
+              "detail": "success check github-robot-_Build_and_Test from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060895.html",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45392873886/attempts/1"
             }
           ]
         },
@@ -1722,6 +1728,18 @@
               "time": "2026-11-24T12:43:26Z",
               "action": "check-posted",
               "detail": "Pending check github-robot-_Build_and_Test linking to https://github.com/openvswitch-ci/ovs-test/actions/runs/45393619959.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45392873886/attempts/1"
+            },
+            {
+              "time": "2026-11-24T12:43:37Z",
+              "action": "check-posted",
+              "detail": "success check github-robot-_Checkpatch from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060891.html",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45392873886/attempts/1"
+            },
+            {
+              "time": "2026-11-24T12:43:48Z",
+              "action": "check-posted",
+              "detail": "success check github-robot-_FreeBSD_Build_and_Test from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/060894.html",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45392873886/attempts/1"
             }
           ]
