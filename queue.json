@@ -1,4 +1,854 @@
 {
   "schema": 14,
-  "series": []
+  "series": [
+    {
+      "id": 535654,
+      "name": "Refactoring netdev_dpdk.",
+      "version": 2,
+      "date": "2026-11-24T10:52:13+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/openvswitch/list/?series=535654",
+      "submitter": {
+        "name": "David Marchand",
+        "email": "david.marchand@redhat.com"
+      },
+      "total": 15,
+      "cover_id": 2351078,
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/openvswitch/ovs.git",
+        "branch": "main",
+        "sha": "000c7330c1c98aae7e4a870eee8f2db6a6fa1d97",
+        "why": "default"
+      },
+      "branch": "series_535654",
+      "discovered": "2026-11-24T10:56:03Z",
+      "started": "2026-11-24T10:56:10Z",
+      "patches": [
+        {
+          "id": 2351079,
+          "number": 1,
+          "name": "[ovs-dev,v2,01/15] netdev-dpdk: Hide some rte_flow error helper.",
+          "msgid": "<20261124105228.750719-2-david.marchand@redhat.com>",
+          "subject": "[ovs-dev] [PATCH v2 01/15] netdev-dpdk: Hide some rte_flow error helper.",
+          "sender": {
+            "name": "David Marchand",
+            "email": "david.marchand@redhat.com"
+          },
+          "status": "pushed",
+          "sha": "5bf49c69b5cf79e1a70fed25230318a814043e65",
+          "pushed": "2026-11-24T10:57:45Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (000c7330c1c9).",
+              "updated": "2026-11-24T10:57:45Z",
+              "completed": "2026-11-24T10:57:45Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535654.2351079.apply-robot.final.1795517770.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "535654-2351079-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-24T10:57:48Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-24T10:56:09Z",
+              "action": "discovered",
+              "detail": "Found in series 535654.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:57:45Z",
+              "action": "applied",
+              "detail": "Commit 5bf49c69b5cf79e1a70fed25230318a814043e65 on base main (000c7330c1c98aae7e4a870eee8f2db6a6fa1d97).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:57:46Z",
+              "action": "pushed",
+              "detail": "Updated branch series_535654 to 5bf49c69b5cf79e1a70fed25230318a814043e65.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:57:48Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit 5bf49c69b5cf79e1a70fed25230318a814043e65 (request 535654-2351079-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:57:50Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535654.2351079.apply-robot.final.1795517770.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2351080,
+          "number": 2,
+          "name": "[ovs-dev,v2,02/15] netdev-dpdk: Cleanup netdev ops.",
+          "msgid": "<20261124105228.750719-3-david.marchand@redhat.com>",
+          "subject": "[ovs-dev] [PATCH v2 02/15] netdev-dpdk: Cleanup netdev ops.",
+          "sender": {
+            "name": "David Marchand",
+            "email": "david.marchand@redhat.com"
+          },
+          "status": "applied",
+          "sha": "aa05a9460bc4936dfba43b6a76db3d325f36bbe8",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (000c7330c1c9).",
+              "updated": "2026-11-24T10:57:45Z",
+              "completed": "2026-11-24T10:57:45Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535654.2351080.apply-robot.final.1795517770.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-24T10:56:09Z",
+              "action": "discovered",
+              "detail": "Found in series 535654.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:57:45Z",
+              "action": "applied",
+              "detail": "Commit aa05a9460bc4936dfba43b6a76db3d325f36bbe8 on base main (000c7330c1c98aae7e4a870eee8f2db6a6fa1d97).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:57:52Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535654.2351080.apply-robot.final.1795517770.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2351083,
+          "number": 3,
+          "name": "[ovs-dev,v2,03/15] netdev-dpdk: Separate ethernet and vhost netdev ops.",
+          "msgid": "<20261124105228.750719-4-david.marchand@redhat.com>",
+          "subject": "[ovs-dev] [PATCH v2 03/15] netdev-dpdk: Separate ethernet and vhost netdev ops.",
+          "sender": {
+            "name": "David Marchand",
+            "email": "david.marchand@redhat.com"
+          },
+          "status": "applied",
+          "sha": "8880dafcfe681fd1ee263a3fc6c436af477f3ed9",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (000c7330c1c9).",
+              "updated": "2026-11-24T10:57:45Z",
+              "completed": "2026-11-24T10:57:45Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535654.2351083.apply-robot.final.1795517770.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-24T10:56:09Z",
+              "action": "discovered",
+              "detail": "Found in series 535654.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:57:45Z",
+              "action": "applied",
+              "detail": "Commit 8880dafcfe681fd1ee263a3fc6c436af477f3ed9 on base main (000c7330c1c98aae7e4a870eee8f2db6a6fa1d97).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:57:53Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535654.2351083.apply-robot.final.1795517770.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2351081,
+          "number": 4,
+          "name": "[ovs-dev,v2,04/15] netdev-dpdk: Propagate error for QoS queue stats.",
+          "msgid": "<20261124105228.750719-5-david.marchand@redhat.com>",
+          "subject": "[ovs-dev] [PATCH v2 04/15] netdev-dpdk: Propagate error for QoS queue stats.",
+          "sender": {
+            "name": "David Marchand",
+            "email": "david.marchand@redhat.com"
+          },
+          "status": "applied",
+          "sha": "8b5cf5f67f6d5c47a845a0b444f2879305fbe51a",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (000c7330c1c9).",
+              "updated": "2026-11-24T10:57:45Z",
+              "completed": "2026-11-24T10:57:45Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535654.2351081.apply-robot.final.1795517770.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-24T10:56:09Z",
+              "action": "discovered",
+              "detail": "Found in series 535654.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:57:45Z",
+              "action": "applied",
+              "detail": "Commit 8b5cf5f67f6d5c47a845a0b444f2879305fbe51a on base main (000c7330c1c98aae7e4a870eee8f2db6a6fa1d97).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:57:55Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535654.2351081.apply-robot.final.1795517770.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2351082,
+          "number": 5,
+          "name": "[ovs-dev,v2,05/15] netdev-dpdk: Remove unused per device buffer size.",
+          "msgid": "<20261124105228.750719-6-david.marchand@redhat.com>",
+          "subject": "[ovs-dev] [PATCH v2 05/15] netdev-dpdk: Remove unused per device buffer size.",
+          "sender": {
+            "name": "David Marchand",
+            "email": "david.marchand@redhat.com"
+          },
+          "status": "applied",
+          "sha": "df785c075d1dae10a36dfde3b34b2505374f7472",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (000c7330c1c9).",
+              "updated": "2026-11-24T10:57:45Z",
+              "completed": "2026-11-24T10:57:45Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535654.2351082.apply-robot.final.1795517770.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-24T10:56:09Z",
+              "action": "discovered",
+              "detail": "Found in series 535654.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:57:45Z",
+              "action": "applied",
+              "detail": "Commit df785c075d1dae10a36dfde3b34b2505374f7472 on base main (000c7330c1c98aae7e4a870eee8f2db6a6fa1d97).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:57:57Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535654.2351082.apply-robot.final.1795517770.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2351085,
+          "number": 6,
+          "name": "[ovs-dev,v2,06/15] netdev-dpdk: Fix leak for per port mempool.",
+          "msgid": "<20261124105228.750719-7-david.marchand@redhat.com>",
+          "subject": "[ovs-dev] [PATCH v2 06/15] netdev-dpdk: Fix leak for per port mempool.",
+          "sender": {
+            "name": "David Marchand",
+            "email": "david.marchand@redhat.com"
+          },
+          "status": "applied",
+          "sha": "17d8fc00d12d15495bcdcfcd3916109f204efbf9",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (000c7330c1c9).",
+              "updated": "2026-11-24T10:57:45Z",
+              "completed": "2026-11-24T10:57:45Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535654.2351085.apply-robot.final.1795517770.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-24T10:56:09Z",
+              "action": "discovered",
+              "detail": "Found in series 535654.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:57:45Z",
+              "action": "applied",
+              "detail": "Commit 17d8fc00d12d15495bcdcfcd3916109f204efbf9 on base main (000c7330c1c98aae7e4a870eee8f2db6a6fa1d97).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:57:58Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535654.2351085.apply-robot.final.1795517770.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2351089,
+          "number": 7,
+          "name": "[ovs-dev,v2,07/15] netdev-dpdk: Isolate mempool creation from netdev_dpdk.",
+          "msgid": "<20261124105228.750719-8-david.marchand@redhat.com>",
+          "subject": "[ovs-dev] [PATCH v2 07/15] netdev-dpdk: Isolate mempool creation from netdev_dpdk.",
+          "sender": {
+            "name": "David Marchand",
+            "email": "david.marchand@redhat.com"
+          },
+          "status": "applied",
+          "sha": "eaae878b75fd6bdd57f79f5ad1d6d1dcee630762",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (000c7330c1c9).",
+              "updated": "2026-11-24T10:57:45Z",
+              "completed": "2026-11-24T10:57:45Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535654.2351089.apply-robot.final.1795517770.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-24T10:56:09Z",
+              "action": "discovered",
+              "detail": "Found in series 535654.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:57:45Z",
+              "action": "applied",
+              "detail": "Commit eaae878b75fd6bdd57f79f5ad1d6d1dcee630762 on base main (000c7330c1c98aae7e4a870eee8f2db6a6fa1d97).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:57:59Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535654.2351089.apply-robot.final.1795517770.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2351087,
+          "number": 8,
+          "name": "[ovs-dev,v2,08/15] netdev-dpdk: Narrow global dpdk mutex scope.",
+          "msgid": "<20261124105228.750719-9-david.marchand@redhat.com>",
+          "subject": "[ovs-dev] [PATCH v2 08/15] netdev-dpdk: Narrow global dpdk mutex scope.",
+          "sender": {
+            "name": "David Marchand",
+            "email": "david.marchand@redhat.com"
+          },
+          "status": "applied",
+          "sha": "014f04fb224ad2b73dd3cb1c35ff75d5b54c4e06",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (000c7330c1c9).",
+              "updated": "2026-11-24T10:57:45Z",
+              "completed": "2026-11-24T10:57:45Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535654.2351087.apply-robot.final.1795517770.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-24T10:56:09Z",
+              "action": "discovered",
+              "detail": "Found in series 535654.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:57:45Z",
+              "action": "applied",
+              "detail": "Commit 014f04fb224ad2b73dd3cb1c35ff75d5b54c4e06 on base main (000c7330c1c98aae7e4a870eee8f2db6a6fa1d97).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:58:00Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535654.2351087.apply-robot.final.1795517770.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2351090,
+          "number": 9,
+          "name": "[ovs-dev,v2,09/15] netdev-dpdk: Separate ethernet and vhost specific fields.",
+          "msgid": "<20261124105228.750719-10-david.marchand@redhat.com>",
+          "subject": "[ovs-dev] [PATCH v2 09/15] netdev-dpdk: Separate ethernet and vhost specific fields.",
+          "sender": {
+            "name": "David Marchand",
+            "email": "david.marchand@redhat.com"
+          },
+          "status": "applied",
+          "sha": "693592fc4c4a6da134e921cbd7625df2ee22259c",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (000c7330c1c9).",
+              "updated": "2026-11-24T10:57:45Z",
+              "completed": "2026-11-24T10:57:45Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535654.2351090.apply-robot.final.1795517770.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-24T10:56:09Z",
+              "action": "discovered",
+              "detail": "Found in series 535654.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:57:45Z",
+              "action": "applied",
+              "detail": "Commit 693592fc4c4a6da134e921cbd7625df2ee22259c on base main (000c7330c1c98aae7e4a870eee8f2db6a6fa1d97).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:58:00Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535654.2351090.apply-robot.final.1795517770.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2351092,
+          "number": 10,
+          "name": "[ovs-dev,v2,10/15] netdev-dpdk: Move common fields and associated helpers.",
+          "msgid": "<20261124105228.750719-11-david.marchand@redhat.com>",
+          "subject": "[ovs-dev] [PATCH v2 10/15] netdev-dpdk: Move common fields and associated helpers.",
+          "sender": {
+            "name": "David Marchand",
+            "email": "david.marchand@redhat.com"
+          },
+          "status": "applied",
+          "sha": "b68cfd6887ee9470c82e3cbfa4858b9a0adb901a",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (000c7330c1c9).",
+              "updated": "2026-11-24T10:57:45Z",
+              "completed": "2026-11-24T10:57:45Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535654.2351092.apply-robot.final.1795517770.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-24T10:56:09Z",
+              "action": "discovered",
+              "detail": "Found in series 535654.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:57:45Z",
+              "action": "applied",
+              "detail": "Commit b68cfd6887ee9470c82e3cbfa4858b9a0adb901a on base main (000c7330c1c98aae7e4a870eee8f2db6a6fa1d97).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:58:02Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535654.2351092.apply-robot.final.1795517770.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2351091,
+          "number": 11,
+          "name": "[ovs-dev,v2,11/15] netdev-dpdk: Move mempool code.",
+          "msgid": "<20261124105228.750719-12-david.marchand@redhat.com>",
+          "subject": "[ovs-dev] [PATCH v2 11/15] netdev-dpdk: Move mempool code.",
+          "sender": {
+            "name": "David Marchand",
+            "email": "david.marchand@redhat.com"
+          },
+          "status": "applied",
+          "sha": "699c3e1e9e7fc59ac9443d19efe714c6cbceb100",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (000c7330c1c9).",
+              "updated": "2026-11-24T10:57:45Z",
+              "completed": "2026-11-24T10:57:45Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535654.2351091.apply-robot.final.1795517770.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-24T10:56:09Z",
+              "action": "discovered",
+              "detail": "Found in series 535654.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:57:45Z",
+              "action": "applied",
+              "detail": "Commit 699c3e1e9e7fc59ac9443d19efe714c6cbceb100 on base main (000c7330c1c98aae7e4a870eee8f2db6a6fa1d97).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:58:03Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535654.2351091.apply-robot.final.1795517770.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2351095,
+          "number": 12,
+          "name": "[ovs-dev,v2,12/15] netdev-dpdk: Move QoS code.",
+          "msgid": "<20261124105228.750719-13-david.marchand@redhat.com>",
+          "subject": "[ovs-dev] [PATCH v2 12/15] netdev-dpdk: Move QoS code.",
+          "sender": {
+            "name": "David Marchand",
+            "email": "david.marchand@redhat.com"
+          },
+          "status": "applied",
+          "sha": "b94033cbaca99a76cc0b45c90f2a7ee00b57758c",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (000c7330c1c9).",
+              "updated": "2026-11-24T10:57:45Z",
+              "completed": "2026-11-24T10:57:45Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535654.2351095.apply-robot.final.1795517770.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-24T10:56:09Z",
+              "action": "discovered",
+              "detail": "Found in series 535654.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:57:45Z",
+              "action": "applied",
+              "detail": "Commit b94033cbaca99a76cc0b45c90f2a7ee00b57758c on base main (000c7330c1c98aae7e4a870eee8f2db6a6fa1d97).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:58:04Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535654.2351095.apply-robot.final.1795517770.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2351093,
+          "number": 13,
+          "name": "[ovs-dev,v2,13/15] netdev-dpdk: Move transmission code.",
+          "msgid": "<20261124105228.750719-14-david.marchand@redhat.com>",
+          "subject": "[ovs-dev] [PATCH v2 13/15] netdev-dpdk: Move transmission code.",
+          "sender": {
+            "name": "David Marchand",
+            "email": "david.marchand@redhat.com"
+          },
+          "status": "applied",
+          "sha": "974b2dd21338f06a2a7cbe92d1d89625776a346f",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (000c7330c1c9).",
+              "updated": "2026-11-24T10:57:45Z",
+              "completed": "2026-11-24T10:57:45Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535654.2351093.apply-robot.final.1795517770.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-24T10:56:09Z",
+              "action": "discovered",
+              "detail": "Found in series 535654.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:57:45Z",
+              "action": "applied",
+              "detail": "Commit 974b2dd21338f06a2a7cbe92d1d89625776a346f on base main (000c7330c1c98aae7e4a870eee8f2db6a6fa1d97).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:58:04Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535654.2351093.apply-robot.final.1795517770.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2351094,
+          "number": 14,
+          "name": "[ovs-dev,v2,14/15] netdev-dpdk: Store vhost ports in a separate list.",
+          "msgid": "<20261124105228.750719-15-david.marchand@redhat.com>",
+          "subject": "[ovs-dev] [PATCH v2 14/15] netdev-dpdk: Store vhost ports in a separate list.",
+          "sender": {
+            "name": "David Marchand",
+            "email": "david.marchand@redhat.com"
+          },
+          "status": "applied",
+          "sha": "1abca3a26fcfb404f306e80ad3a71cae8d589bb7",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (000c7330c1c9).",
+              "updated": "2026-11-24T10:57:45Z",
+              "completed": "2026-11-24T10:57:45Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535654.2351094.apply-robot.final.1795517770.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-24T10:56:09Z",
+              "action": "discovered",
+              "detail": "Found in series 535654.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:57:45Z",
+              "action": "applied",
+              "detail": "Commit 1abca3a26fcfb404f306e80ad3a71cae8d589bb7 on base main (000c7330c1c98aae7e4a870eee8f2db6a6fa1d97).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:58:05Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535654.2351094.apply-robot.final.1795517770.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2351096,
+          "number": 15,
+          "name": "[ovs-dev,v2,15/15] netdev-dpdk: Split ethernet and vhost netdevs.",
+          "msgid": "<20261124105228.750719-16-david.marchand@redhat.com>",
+          "subject": "[ovs-dev] [PATCH v2 15/15] netdev-dpdk: Split ethernet and vhost netdevs.",
+          "sender": {
+            "name": "David Marchand",
+            "email": "david.marchand@redhat.com"
+          },
+          "status": "applied",
+          "sha": "02f0aa098085bc106918c3be716f407346009349",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (000c7330c1c9).",
+              "updated": "2026-11-24T10:57:45Z",
+              "completed": "2026-11-24T10:57:45Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535654.2351096.apply-robot.final.1795517770.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-24T10:56:09Z",
+              "action": "discovered",
+              "detail": "Found in series 535654.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:57:45Z",
+              "action": "applied",
+              "detail": "Commit 02f0aa098085bc106918c3be716f407346009349 on base main (000c7330c1c98aae7e4a870eee8f2db6a6fa1d97).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            },
+            {
+              "time": "2026-11-24T10:58:06Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535654.2351096.apply-robot.final.1795517770.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-24T10:56:03Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+        },
+        {
+          "time": "2026-11-24T10:56:09Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 15 patches.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+        },
+        {
+          "time": "2026-11-24T10:57:42Z",
+          "action": "base-selected",
+          "detail": "main at 000c7330c1c98aae7e4a870eee8f2db6a6fa1d97: default.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45378873825/attempts/1"
+        }
+      ]
+    }
+  ]
 }
