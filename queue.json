@@ -1,4 +1,282 @@
 {
   "schema": 14,
-  "series": []
+  "series": [
+    {
+      "id": 535582,
+      "name": "conntrack flush: Skip gone entries, report failures.",
+      "version": 3,
+      "date": "2026-11-24T03:57:50+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/openvswitch/list/?series=535582",
+      "submitter": {
+        "name": "Bekei Park",
+        "email": "forq999@iteasy.co.kr"
+      },
+      "total": 4,
+      "cover_id": 2350809,
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/openvswitch/ovs.git",
+        "branch": "main",
+        "sha": "e77c3bac93f5f62234e5e586b6b02488a43e4557",
+        "why": "default"
+      },
+      "branch": "series_535582",
+      "discovered": "2026-11-24T03:59:05Z",
+      "started": "2026-11-24T03:59:11Z",
+      "patches": [
+        {
+          "id": 2350808,
+          "number": 1,
+          "name": "[ovs-dev,v3,1/4] conntrack: Rate limit the log for a tuple that is not found.",
+          "msgid": "<b8130249bb187b109c24470d3bd2c9f8c7e96142.1795492669.git.forq999@iteasy.co.kr>",
+          "subject": "[ovs-dev] [PATCH v3 1/4] conntrack: Rate limit the log for a tuple that is not found.",
+          "sender": {
+            "name": "Bekei Park",
+            "email": "forq999@iteasy.co.kr"
+          },
+          "status": "pushed",
+          "sha": "d5ac5f3b59ee322e7d0640f10081dfe1f163b7bb",
+          "pushed": "2026-11-24T03:59:41Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-24T03:59:41Z",
+              "completed": "2026-11-24T03:59:41Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535582.2350808.apply-robot.final.1795492751.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "535582-2350808-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-24T03:59:45Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-24T03:59:10Z",
+              "action": "discovered",
+              "detail": "Found in series 535582.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45322463685/attempts/1"
+            },
+            {
+              "time": "2026-11-24T03:59:41Z",
+              "action": "applied",
+              "detail": "Commit d5ac5f3b59ee322e7d0640f10081dfe1f163b7bb on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45322463685/attempts/1"
+            },
+            {
+              "time": "2026-11-24T03:59:43Z",
+              "action": "pushed",
+              "detail": "Updated branch series_535582 to d5ac5f3b59ee322e7d0640f10081dfe1f163b7bb.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45322463685/attempts/1"
+            },
+            {
+              "time": "2026-11-24T03:59:45Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit d5ac5f3b59ee322e7d0640f10081dfe1f163b7bb (request 535582-2350808-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45322463685/attempts/1"
+            },
+            {
+              "time": "2026-11-24T03:59:46Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535582.2350808.apply-robot.final.1795492751.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45322463685/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2350810,
+          "number": 2,
+          "name": "[ovs-dev,v3,2/4] ct-dpif: Do not stop a partial match flush on ENOENT.",
+          "msgid": "<5716f7920136193882297bdc229d5db64841341d.1795492669.git.forq999@iteasy.co.kr>",
+          "subject": "[ovs-dev] [PATCH v3 2/4] ct-dpif: Do not stop a partial match flush on ENOENT.",
+          "sender": {
+            "name": "Bekei Park",
+            "email": "forq999@iteasy.co.kr"
+          },
+          "status": "applied",
+          "sha": "41ae9924b4948203467f73da6ac2e9829c969f5a",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-24T03:59:41Z",
+              "completed": "2026-11-24T03:59:41Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535582.2350810.apply-robot.final.1795492751.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-24T03:59:10Z",
+              "action": "discovered",
+              "detail": "Found in series 535582.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45322463685/attempts/1"
+            },
+            {
+              "time": "2026-11-24T03:59:41Z",
+              "action": "applied",
+              "detail": "Commit 41ae9924b4948203467f73da6ac2e9829c969f5a on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45322463685/attempts/1"
+            },
+            {
+              "time": "2026-11-24T03:59:47Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535582.2350810.apply-robot.final.1795492751.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45322463685/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2350811,
+          "number": 3,
+          "name": "[ovs-dev,v3,3/4] ofproto: Report a failed conntrack flush to the controller.",
+          "msgid": "<7333b5445c396026ee99bcffc255f3a41a6e73ab.1795492669.git.forq999@iteasy.co.kr>",
+          "subject": "[ovs-dev] [PATCH v3 3/4] ofproto: Report a failed conntrack flush to the controller.",
+          "sender": {
+            "name": "Bekei Park",
+            "email": "forq999@iteasy.co.kr"
+          },
+          "status": "applied",
+          "sha": "e5c316500b6366b0d230b25d430196fb7c8cb05a",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-24T03:59:41Z",
+              "completed": "2026-11-24T03:59:41Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535582.2350811.apply-robot.final.1795492751.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-24T03:59:10Z",
+              "action": "discovered",
+              "detail": "Found in series 535582.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45322463685/attempts/1"
+            },
+            {
+              "time": "2026-11-24T03:59:41Z",
+              "action": "applied",
+              "detail": "Commit e5c316500b6366b0d230b25d430196fb7c8cb05a on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45322463685/attempts/1"
+            },
+            {
+              "time": "2026-11-24T03:59:48Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535582.2350811.apply-robot.final.1795492751.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45322463685/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2350812,
+          "number": 4,
+          "name": "[ovs-dev,v3,4/4] netlink-conntrack: Delete entries of any L4 protocol.",
+          "msgid": "<685c9c031cae7dd16465dae03f5a12b27f08d880.1795492669.git.forq999@iteasy.co.kr>",
+          "subject": "[ovs-dev] [PATCH v3 4/4] netlink-conntrack: Delete entries of any L4 protocol.",
+          "sender": {
+            "name": "Bekei Park",
+            "email": "forq999@iteasy.co.kr"
+          },
+          "status": "applied",
+          "sha": "71a42173c62c2e341d29f8f9adba7b90534cceed",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (e77c3bac93f5).",
+              "updated": "2026-11-24T03:59:41Z",
+              "completed": "2026-11-24T03:59:41Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.535582.2350812.apply-robot.final.1795492751.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-24T03:59:10Z",
+              "action": "discovered",
+              "detail": "Found in series 535582.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45322463685/attempts/1"
+            },
+            {
+              "time": "2026-11-24T03:59:41Z",
+              "action": "applied",
+              "detail": "Commit 71a42173c62c2e341d29f8f9adba7b90534cceed on base main (e77c3bac93f5f62234e5e586b6b02488a43e4557).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45322463685/attempts/1"
+            },
+            {
+              "time": "2026-11-24T03:59:49Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.535582.2350812.apply-robot.final.1795492751.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45322463685/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-24T03:59:05Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45322463685/attempts/1"
+        },
+        {
+          "time": "2026-11-24T03:59:10Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 4 patches.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45322463685/attempts/1"
+        },
+        {
+          "time": "2026-11-24T03:59:39Z",
+          "action": "base-selected",
+          "detail": "main at e77c3bac93f5f62234e5e586b6b02488a43e4557: default.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45322463685/attempts/1"
+        }
+      ]
+    }
+  ]
 }
