@@ -1,4 +1,58 @@
 {
   "schema": 14,
-  "series": []
+  "series": [
+    {
+      "id": 535924,
+      "name": "[ovs-dev,RFC] db-ctl-base: Add --all to list and find.",
+      "version": 1,
+      "date": "2026-11-25T11:40:53+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/openvswitch/list/?series=535924",
+      "submitter": {
+        "name": "Ales Musil",
+        "email": "amusil@redhat.com"
+      },
+      "total": 1,
+      "status": "skipped",
+      "reason": "RFC",
+      "discovered": "2026-11-25T11:48:57Z",
+      "finished": "2026-11-25T11:49:03Z",
+      "patches": [
+        {
+          "id": 2352005,
+          "number": 1,
+          "name": "[ovs-dev,RFC] db-ctl-base: Add --all to list and find.",
+          "msgid": "<20261125114053.1780688-1-amusil@redhat.com>",
+          "status": "skipped",
+          "decisions": [
+            {
+              "time": "2026-11-25T11:49:11Z",
+              "action": "discovered",
+              "detail": "Found in series 535924.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45606154485/attempts/1"
+            },
+            {
+              "time": "2026-11-25T11:49:11Z",
+              "action": "skipped",
+              "detail": "Series skipped: RFC",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45606154485/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-25T11:48:57Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45606154485/attempts/1"
+        },
+        {
+          "time": "2026-11-25T11:49:11Z",
+          "action": "skipped",
+          "detail": "RFC",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45606154485/attempts/1"
+        }
+      ]
+    }
+  ]
 }
