@@ -1,4 +1,125 @@
 {
   "schema": 14,
-  "series": []
+  "series": [
+    {
+      "id": 536100,
+      "name": "[ovs-dev] checkpatch: Fix sign-off checks for quoted or encoded authors.",
+      "version": 1,
+      "date": "2026-11-26T06:17:39+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/openvswitch/list/?series=536100",
+      "submitter": {
+        "name": "Aeliton G. Silva",
+        "email": "aeliton.silva@magalu.cloud"
+      },
+      "total": 1,
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/openvswitch/ovs.git",
+        "branch": "main",
+        "sha": "000c7330c1c98aae7e4a870eee8f2db6a6fa1d97",
+        "why": "default"
+      },
+      "branch": "series_536100",
+      "discovered": "2026-11-26T06:19:26Z",
+      "started": "2026-11-26T06:19:59Z",
+      "patches": [
+        {
+          "id": 2352407,
+          "number": 1,
+          "name": "[ovs-dev] checkpatch: Fix sign-off checks for quoted or encoded authors.",
+          "msgid": "<20261126061745.1984398-1-aeliton.silva@magalu.cloud>",
+          "subject": "[ovs-dev] [PATCH] checkpatch: Fix sign-off checks for quoted or encoded authors.",
+          "sender": {
+            "name": "Aeliton G. Silva",
+            "email": "aeliton.silva@magalu.cloud"
+          },
+          "status": "pushed",
+          "sha": "194f68dee54c01eb35c2a293fef59f985ecf2300",
+          "pushed": "2026-11-26T06:20:04Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (000c7330c1c9).",
+              "updated": "2026-11-26T06:20:04Z",
+              "completed": "2026-11-26T06:20:04Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.536100.2352407.apply-robot.final.1795673999.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "536100-2352407-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-26T06:20:07Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-26T06:19:56Z",
+              "action": "discovered",
+              "detail": "Found in series 536100.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45766015262/attempts/1"
+            },
+            {
+              "time": "2026-11-26T06:20:04Z",
+              "action": "applied",
+              "detail": "Commit 194f68dee54c01eb35c2a293fef59f985ecf2300 on base main (000c7330c1c98aae7e4a870eee8f2db6a6fa1d97).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45766015262/attempts/1"
+            },
+            {
+              "time": "2026-11-26T06:20:05Z",
+              "action": "pushed",
+              "detail": "Updated branch series_536100 to 194f68dee54c01eb35c2a293fef59f985ecf2300.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45766015262/attempts/1"
+            },
+            {
+              "time": "2026-11-26T06:20:07Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit 194f68dee54c01eb35c2a293fef59f985ecf2300 (request 536100-2352407-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45766015262/attempts/1"
+            },
+            {
+              "time": "2026-11-26T06:20:08Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.536100.2352407.apply-robot.final.1795673999.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45766015262/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-26T06:19:26Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45766015262/attempts/1"
+        },
+        {
+          "time": "2026-11-26T06:19:56Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 1 patches.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45766015262/attempts/1"
+        },
+        {
+          "time": "2026-11-26T06:20:02Z",
+          "action": "base-selected",
+          "detail": "main at 000c7330c1c98aae7e4a870eee8f2db6a6fa1d97: default.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45766015262/attempts/1"
+        }
+      ]
+    }
+  ]
 }
