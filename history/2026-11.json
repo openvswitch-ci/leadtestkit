@@ -29918,6 +29918,59 @@
           "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45769466498/attempts/1"
         }
       ]
+    },
+    {
+      "id": 536208,
+      "name": "[ovs-dev,net] openvswitch: reject negative L2 length in ovs_fragment()",
+      "version": 1,
+      "date": "2026-11-26T08:31:41+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/openvswitch/list/?series=536208",
+      "submitter": {
+        "name": "Lin Jiapeng",
+        "email": "ljp1205831794@gmail.com"
+      },
+      "total": 1,
+      "status": "skipped",
+      "reason": "kernel patch",
+      "discovered": "2026-11-26T14:32:21Z",
+      "finished": "2026-11-26T14:32:21Z",
+      "patches": [
+        {
+          "id": 2352742,
+          "number": 1,
+          "name": "[ovs-dev,net] openvswitch: reject negative L2 length in ovs_fragment()",
+          "msgid": "<20261126083218.55429-1-ljp1205831794@gmail.com>",
+          "status": "skipped",
+          "decisions": [
+            {
+              "time": "2026-11-26T14:32:27Z",
+              "action": "discovered",
+              "detail": "Found in series 536208.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45838341576/attempts/1"
+            },
+            {
+              "time": "2026-11-26T14:32:27Z",
+              "action": "skipped",
+              "detail": "Series skipped: kernel patch",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45838341576/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-26T14:32:21Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45838341576/attempts/1"
+        },
+        {
+          "time": "2026-11-26T14:32:27Z",
+          "action": "skipped",
+          "detail": "kernel patch",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45838341576/attempts/1"
+        }
+      ]
     }
   ]
 }
