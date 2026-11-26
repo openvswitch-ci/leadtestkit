@@ -33,7 +33,7 @@
             "name": "Aeliton G. Silva",
             "email": "aeliton.silva@magalu.cloud"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "194f68dee54c01eb35c2a293fef59f985ecf2300",
           "pushed": "2026-11-26T06:20:04Z",
           "comments_seen": 3796923,
@@ -274,6 +274,12 @@
               "detail": "Sent final email for github-robot: Build and Test (success). Message-ID: <leadtest.536100.2352407.github-robot-build-and-test.final.1795673999.1@ovn.org>.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45769466498/attempts/1",
               "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/45767468979/attempts/1"
+            },
+            {
+              "time": "2026-11-26T06:52:41Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45769466498/attempts/1"
             }
           ]
         }
