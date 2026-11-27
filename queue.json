@@ -1,4 +1,125 @@
 {
   "schema": 14,
-  "series": []
+  "series": [
+    {
+      "id": 536507,
+      "name": "[ovs-dev] stream-ssl: Reload key and certificate when either of them changes.",
+      "version": 1,
+      "date": "2026-11-27T21:50:23+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/openvswitch/list/?series=536507",
+      "submitter": {
+        "name": "Paulo Guilherme Silva",
+        "email": "guilherme.paulo@magalu.cloud"
+      },
+      "total": 1,
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/openvswitch/ovs.git",
+        "branch": "main",
+        "sha": "259092e02c5b4b1e68c0f939ade970de71923a31",
+        "why": "default"
+      },
+      "branch": "series_536507",
+      "discovered": "2026-11-27T21:52:48Z",
+      "started": "2026-11-27T21:53:03Z",
+      "patches": [
+        {
+          "id": 2353905,
+          "number": 1,
+          "name": "[ovs-dev] stream-ssl: Reload key and certificate when either of them changes.",
+          "msgid": "<20261127215023.2673105-1-guilherme.paulo@magalu.cloud>",
+          "subject": "[ovs-dev] [PATCH] stream-ssl: Reload key and certificate when either of them changes.",
+          "sender": {
+            "name": "Paulo Guilherme Silva",
+            "email": "guilherme.paulo@magalu.cloud"
+          },
+          "status": "pushed",
+          "sha": "393153270fabdf3590be4dd5b3090ea7de9aa7ba",
+          "pushed": "2026-11-27T21:53:08Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (259092e02c5b).",
+              "updated": "2026-11-27T21:53:08Z",
+              "completed": "2026-11-27T21:53:08Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.536507.2353905.apply-robot.final.1795816383.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "536507-2353905-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-27T21:53:12Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-27T21:53:00Z",
+              "action": "discovered",
+              "detail": "Found in series 536507.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/46073069648/attempts/1"
+            },
+            {
+              "time": "2026-11-27T21:53:08Z",
+              "action": "applied",
+              "detail": "Commit 393153270fabdf3590be4dd5b3090ea7de9aa7ba on base main (259092e02c5b4b1e68c0f939ade970de71923a31).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/46073069648/attempts/1"
+            },
+            {
+              "time": "2026-11-27T21:53:10Z",
+              "action": "pushed",
+              "detail": "Updated branch series_536507 to 393153270fabdf3590be4dd5b3090ea7de9aa7ba.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/46073069648/attempts/1"
+            },
+            {
+              "time": "2026-11-27T21:53:12Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit 393153270fabdf3590be4dd5b3090ea7de9aa7ba (request 536507-2353905-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/46073069648/attempts/1"
+            },
+            {
+              "time": "2026-11-27T21:53:13Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.536507.2353905.apply-robot.final.1795816383.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/46073069648/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-27T21:52:48Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/46073069648/attempts/1"
+        },
+        {
+          "time": "2026-11-27T21:53:00Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 1 patches.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/46073069648/attempts/1"
+        },
+        {
+          "time": "2026-11-27T21:53:06Z",
+          "action": "base-selected",
+          "detail": "main at 259092e02c5b4b1e68c0f939ade970de71923a31: default.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/46073069648/attempts/1"
+        }
+      ]
+    }
+  ]
 }
