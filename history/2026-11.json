@@ -30243,6 +30243,12 @@
               "action": "done",
               "detail": "Testing and reporting are complete.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45923609919/attempts/1"
+            },
+            {
+              "time": "2026-11-27T01:53:04Z",
+              "action": "check-posted",
+              "detail": "success check github-robot-_Build_and_Test from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/061081.html",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/45925037983/attempts/1"
             }
           ]
         }
