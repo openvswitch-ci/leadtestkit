@@ -1,4 +1,178 @@
 {
   "schema": 14,
-  "series": []
+  "series": [
+    {
+      "id": 536426,
+      "name": "Add JSON output to several ovs-appctl commands",
+      "version": 8,
+      "date": "2026-11-27T14:50:36+11:00",
+      "web_url": "http://patchwork.ozlabs.org/project/openvswitch/list/?series=536426",
+      "submitter": {
+        "name": "Timothy Redaelli",
+        "email": "tredaelli@redhat.com"
+      },
+      "total": 2,
+      "cover_id": 2353644,
+      "status": "testing",
+      "base": {
+        "git_url": "https://github.com/openvswitch/ovs.git",
+        "branch": "main",
+        "sha": "259092e02c5b4b1e68c0f939ade970de71923a31",
+        "why": "default"
+      },
+      "branch": "series_536426",
+      "discovered": "2026-11-27T14:52:42Z",
+      "started": "2026-11-27T14:52:57Z",
+      "patches": [
+        {
+          "id": 2353645,
+          "number": 1,
+          "name": "[ovs-dev,v8,1/2] dpif-netdev: Add JSON output to pmd-perf-show.",
+          "msgid": "<ddb1ebd2f52fc323577b1d1d8bdde36def39de22.1795790705.git.tredaelli@redhat.com>",
+          "subject": "[ovs-dev] [PATCH v8 1/2] dpif-netdev: Add JSON output to pmd-perf-show.",
+          "sender": {
+            "name": "Timothy Redaelli",
+            "email": "tredaelli@redhat.com"
+          },
+          "status": "pushed",
+          "sha": "54f4c411bb3ad93fd57a2b9cc601d7dbf5348d0c",
+          "pushed": "2026-11-27T14:53:13Z",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (259092e02c5b).",
+              "updated": "2026-11-27T14:53:13Z",
+              "completed": "2026-11-27T14:53:13Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.536426.2353645.apply-robot.final.1795791177.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            },
+            {
+              "kind": "dispatch",
+              "workflow": "leadtest-checkpatch.yml",
+              "file": "leadtest-checkpatch.yml",
+              "correlation_id": "536426-2353645-leadtest-checkpatch-1",
+              "status": "requested",
+              "updated": "2026-11-27T14:53:16Z",
+              "pending": {},
+              "final": {},
+              "reply": {}
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-27T14:52:54Z",
+              "action": "discovered",
+              "detail": "Found in series 536426.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/46019807955/attempts/1"
+            },
+            {
+              "time": "2026-11-27T14:53:13Z",
+              "action": "applied",
+              "detail": "Commit 54f4c411bb3ad93fd57a2b9cc601d7dbf5348d0c on base main (259092e02c5b4b1e68c0f939ade970de71923a31).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/46019807955/attempts/1"
+            },
+            {
+              "time": "2026-11-27T14:53:15Z",
+              "action": "pushed",
+              "detail": "Updated branch series_536426 to 54f4c411bb3ad93fd57a2b9cc601d7dbf5348d0c.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/46019807955/attempts/1"
+            },
+            {
+              "time": "2026-11-27T14:53:16Z",
+              "action": "dispatched",
+              "detail": "leadtest-checkpatch.yml from main for commit 54f4c411bb3ad93fd57a2b9cc601d7dbf5348d0c (request 536426-2353645-leadtest-checkpatch-1).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/46019807955/attempts/1"
+            },
+            {
+              "time": "2026-11-27T14:53:17Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.536426.2353645.apply-robot.final.1795791177.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/46019807955/attempts/1"
+            }
+          ]
+        },
+        {
+          "id": 2353646,
+          "number": 2,
+          "name": "[ovs-dev,v8,2/2] dpctl: Add JSON output to dpctl/show.",
+          "msgid": "<6af8ba2628c5862ded728781edad3ef1e01e7285.1795790705.git.tredaelli@redhat.com>",
+          "subject": "[ovs-dev] [PATCH v8 2/2] dpctl: Add JSON output to dpctl/show.",
+          "sender": {
+            "name": "Timothy Redaelli",
+            "email": "tredaelli@redhat.com"
+          },
+          "status": "applied",
+          "sha": "fe85164d3516f4cc483e93b87221b7ae13f6b6f4",
+          "runs": [
+            {
+              "kind": "apply",
+              "workflow": "apply-robot",
+              "status": "completed",
+              "result": "success",
+              "details": "Applied on top of main (259092e02c5b).",
+              "updated": "2026-11-27T14:53:13Z",
+              "completed": "2026-11-27T14:53:13Z",
+              "pending": {},
+              "final": {
+                "email": "sent",
+                "message_id": "<leadtest.536426.2353646.apply-robot.final.1795791177.1@ovn.org>"
+              },
+              "reply": {
+                "email": "skipped"
+              }
+            }
+          ],
+          "decisions": [
+            {
+              "time": "2026-11-27T14:52:54Z",
+              "action": "discovered",
+              "detail": "Found in series 536426.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/46019807955/attempts/1"
+            },
+            {
+              "time": "2026-11-27T14:53:13Z",
+              "action": "applied",
+              "detail": "Commit fe85164d3516f4cc483e93b87221b7ae13f6b6f4 on base main (259092e02c5b4b1e68c0f939ade970de71923a31).",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/46019807955/attempts/1"
+            },
+            {
+              "time": "2026-11-27T14:53:17Z",
+              "action": "report-sent",
+              "detail": "Sent final email for apply-robot (success). Message-ID: <leadtest.536426.2353646.apply-robot.final.1795791177.1@ovn.org>.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/46019807955/attempts/1"
+            }
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "time": "2026-11-27T14:52:42Z",
+          "action": "discovered",
+          "detail": "Found in Patchwork.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/46019807955/attempts/1"
+        },
+        {
+          "time": "2026-11-27T14:52:54Z",
+          "action": "queued",
+          "detail": "Eligible for testing; 2 patches.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/46019807955/attempts/1"
+        },
+        {
+          "time": "2026-11-27T14:53:11Z",
+          "action": "base-selected",
+          "detail": "main at 259092e02c5b4b1e68c0f939ade970de71923a31: default.",
+          "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/46019807955/attempts/1"
+        }
+      ]
+    }
+  ]
 }
