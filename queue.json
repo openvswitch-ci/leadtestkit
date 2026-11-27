@@ -33,7 +33,7 @@
             "name": "Paulo Guilherme Silva",
             "email": "guilherme.paulo@magalu.cloud"
           },
-          "status": "pushed",
+          "status": "done",
           "sha": "393153270fabdf3590be4dd5b3090ea7de9aa7ba",
           "pushed": "2026-11-27T21:53:08Z",
           "runs": [
@@ -265,6 +265,12 @@
               "detail": "Sent final email for github-robot: Build and Test (success). Message-ID: <leadtest.536507.2353905.github-robot-build-and-test.final.1795816383.1@ovn.org>.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/46076239092/attempts/1",
               "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/46073149733/attempts/1"
+            },
+            {
+              "time": "2026-11-27T22:26:00Z",
+              "action": "done",
+              "detail": "Testing and reporting are complete.",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/46076239092/attempts/1"
             }
           ]
         }
