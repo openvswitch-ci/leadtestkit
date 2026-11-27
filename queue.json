@@ -482,6 +482,12 @@
               "detail": "Build and Test run 46020409796, attempt 1: in_progress.",
               "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/46022046047/attempts/1",
               "workflow_url": "https://github.com/openvswitch-ci/ovs-test/actions/runs/46020409796/attempts/1"
+            },
+            {
+              "time": "2026-11-27T15:23:05Z",
+              "action": "check-posted",
+              "detail": "success check github-robot-_FreeBSD_Build_and_Test from https://mail.openvswitch.org/pipermail/ovs-build/2026-November/061107.html",
+              "run_url": "https://github.com/openvswitch-ci/leadtestkit/actions/runs/46024320754/attempts/1"
             }
           ]
         }
