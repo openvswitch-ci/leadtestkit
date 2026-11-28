@@ -6,7 +6,7 @@
     "project": "openvswitch",
     "test_repo": "github.com/openvswitch-ci/ovs-test"
   },
-  "tools_synced": "2026-11-21T00:07:46Z",
+  "tools_synced": "2026-11-28T00:22:42Z",
   "events": {
     "series-completed": 5457748
   },
